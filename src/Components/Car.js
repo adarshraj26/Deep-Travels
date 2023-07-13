@@ -9,7 +9,8 @@ import './style.css';
         <p class="text-start">Cabs from Jamshedpur to Ranchi</p>
         </div>
         <div className='main-card'>
-            <div class="card" style={{width: "18rem"}}>
+            <div className='row'>
+            <div class="col card" style={{width: "18rem"}}>
                 <img src="..." class="card-img-top" alt="..."/>
                     <div class="card-body">
                         <h5 class="card-title">Maruti Suzuki Dezire</h5>
@@ -17,7 +18,7 @@ import './style.css';
                         <a href="#" class="btn btn-primary">Book Now</a>
                     </div>
             </div>
-            <div class="card" style={{width: "18rem"}}>
+            <div class="col card" style={{width: "18rem"}}>
                 <img src="..." class="card-img-top" alt="..."/>
                     <div class="card-body">
                         <h5 class="card-title">Toyota Innova</h5>
@@ -25,7 +26,7 @@ import './style.css';
                         <a href="#" class="btn btn-primary">Book Now</a>
                     </div>
             </div>
-            <div class="card" style={{width: "18rem"}}>
+            <div class="col card" style={{width: "18rem"}}>
                 <img src="..." class="card-img-top" alt="..."/>
                     <div class="card-body">
                         <h5 class="card-title">Honda Amaze</h5>
@@ -33,7 +34,11 @@ import './style.css';
                         <a href="#" class="btn btn-primary">Book Now</a>
                     </div>
             </div>
-            <div class="card" style={{width: "18rem"}}>
+            </div>
+
+            <div className='row'>
+            
+            <div class="col card" style={{width: "18rem"}}>
                 <img src="..." class="card-img-top" alt="..."/>
                     <div class="card-body">
                         <h5 class="card-title">Maruti Suzuki Dezire</h5>
@@ -41,7 +46,7 @@ import './style.css';
                         <a href="#" class="btn btn-primary">Book Now</a>
                     </div>
             </div>
-            <div class="card" style={{width: "18rem"}}>
+            <div class="col card" style={{width: "18rem"}}>
                 <img src="..." class="card-img-top" alt="..."/>
                     <div class="card-body">
                         <h5 class="card-title">Maruti Suzuki Dezire</h5>
@@ -49,13 +54,14 @@ import './style.css';
                         <a href="#" class="btn btn-primary">Book Now</a>
                     </div>
             </div>
-            <div class="card" style={{width: "18rem"}}>
+            <div class="col card" style={{width: "18rem"}}>
                 <img src="..." class="card-img-top" alt="..."/>
                     <div class="card-body">
                         <h5 class="card-title">Maruti Suzuki Dezire</h5>
                         <p class="card-text">&#8377; 2000</p>
                         <a href="#" class="btn btn-primary">Book Now</a>
                     </div>
+            </div>
             </div>
             </div>
             </section>

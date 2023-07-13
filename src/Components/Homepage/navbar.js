@@ -3,6 +3,8 @@ import "../style.css";
 import Carbook from "../Car";
 import Testimonial from "./testimonial";
 import BottomBanner from "./banner";
+import TopBanner from "./Topbanner";
+import HeroForm from "./Traveldetails";
 
 
 const Navbar = () => {
@@ -44,9 +46,11 @@ const Navbar = () => {
           </ul>
         </div>
       </nav>
+      <TopBanner/>
+      <HeroForm/>
       <BottomBanner/>
       <Testimonial/>
-      <Carbook/>
+      {/* <Carbook/> */}
     </div>
   );
 };

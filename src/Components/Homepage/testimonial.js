@@ -4,7 +4,7 @@ import '../style.css';
 const Testimonial = () => {
     return (
         <>
-            <section className="section-testimonial">
+            {/* <section className="section-testimonial">
                 <div className="testimonial-header">
                     <p>Testimonials</p>
                 </div>
@@ -22,7 +22,14 @@ const Testimonial = () => {
                     </div>
 
                 </div>
-            </section>
+            </section> */}
+
+
+            
+
+            
+
+
         </>
     )
 }
