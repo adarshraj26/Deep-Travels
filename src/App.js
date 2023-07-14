@@ -9,6 +9,8 @@ import Footer from './Components/Homepage/footer';
 import TopBanner from './Components/Homepage/Topbanner';
 import BottomBanner from './Components/Homepage/banner';
 import Wizard from './Components/Homepage/wizard';
+import Testimonial from './Components/Homepage/testimonial';
+import Carbook from './Components/Car';
 // import Searchdestination from './Components/Homepage/Destination';
 
 
@@ -17,13 +19,15 @@ function App() {
   return (
     <div>
       <Navbar/>
-      <TopBanner/>
-      <Wizard/>
+      {/* <TopBanner/>
+      <Wizard/> */}
       {/* <Searchdestination/> */}
-      <BottomBanner/>
+      {/* <BottomBanner/>
+      <Testimonial/> */}
       {/* <VehicleDetails/>
       <Charges/>
       <Passenger/> */}
+      <Carbook/>
       <Footer/>
     </div>
   );

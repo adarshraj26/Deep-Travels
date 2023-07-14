@@ -156,27 +156,39 @@ footer {
 /* 
 **Card 
 */
+
+.section-card{
+  margin-bottom: 50px;
+}
+
 .main-card {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 800px;
+  height: 40%;
+  margin: auto;
   max-width: fit-content;
 }
 
-.card {
+.main-card .card {
   /* width: calc(80% - 20px); */
-  margin: 10px;
+  margin: 40px;
   /* padding: 0 20px; */
-  /* border: 1px solid #ccc; */
-  border-radius: 5px;
+  /* border: 1px solid; */
+  border-radius: 22px 22px 5px 5px;
   /* text-align: center; */
   display: flex;
   float: left;
-  width: 25%;
+  width: 35%;
 }
 
-.card-header p {
+.card-header{
+  display: flex;
+  margin-top: 50px;
+  margin-left: 100px;
+}
+
+.card-header h1 {
   font-family: var(--ff-2);
   font-weight: var(--fw-1);
   font-size: 35px;
@@ -198,7 +210,7 @@ footer {
   width: 50%;
   align-items: center;
   justify-content: center;
-  margin-left: 45px;
+  margin-left: 25%;
   border-radius: 30px;
   background: var(--card-btn);
 }
@@ -282,6 +294,28 @@ footer {
 /* 
  **Testimonial 
 */
+
+.section-testimonial{
+  height: 800px;
+  width: 100%;
+}
+
+.section-testimonial .testimonial-header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.testimonial-header h1{
+  font-family: var(--ff-3);
+  font-weight: var(--fw-1);
+  font-size: 3rem;
+  letter-spacing: 0.5px;
+}
+
+
+
 
 /* 
  **TopBanner 
@@ -369,58 +403,6 @@ footer {
   margin-top: 150px;
 }
 
-/* 
- **Form 
-*/
-
-.hero-form {
-  background: var(--gradient);
-  border: 1px solid #dddada;
-  margin-top: 9rem;
-  margin-left: 7rem;
-  box-shadow: var(--shadow-1);
-  border-radius: var(--radius-18);
-  font-family: var(--ff-nunito);
-}
-
-.input-wrapper {
-  padding: 15px 20px;
-}
-
-.input-wrapper:not(:last-of-type) {
-  border-bottom: 1px solid hsla(0, 0%, 0%, 0.08);
-}
-
-.input-label {
-  color: #000000;
-  font-size: var(--fs-6);
-  font-weight: bolder;
-  margin-bottom: 10px;
-}
-
-.input-field {
-  color: var(--space-cadet);
-  outline: 2px solid rgb(218, 215, 215);
-  font-size: 0.8rem;
-  outline-offset: 5px;
-  border-radius: 4px;
-  transition: var(--transition);
-}
-
-.input-field:focus {
-  outline-color: var(--carolina-blue);
-}
-
-.input-field::placeholder {
-  color: var(--independence);
-}
-
-.hero-form .btn {
-  --width: calc(100% - 40px);
-  --height: 50px;
-  margin: 160%;
-  text-transform: uppercase;
-}
 
 /* 
  **VehicleBooking
