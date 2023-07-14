@@ -4,7 +4,9 @@ import Carbook from "../Car";
 import Testimonial from "./testimonial";
 import BottomBanner from "./banner";
 import TopBanner from "./Topbanner";
-import HeroForm from "./Traveldetails";
+import Charges from "../Vehiclebooking/charges";
+import VehicleDetails from "../Vehiclebooking/VehicleDetails";
+import Passenger from "../Vehiclebooking/Passenger";
 
 
 const Navbar = () => {
@@ -46,11 +48,6 @@ const Navbar = () => {
           </ul>
         </div>
       </nav>
-      <TopBanner/>
-      <HeroForm/>
-      <BottomBanner/>
-      <Testimonial/>
-      {/* <Carbook/> */}
     </div>
   );
 };

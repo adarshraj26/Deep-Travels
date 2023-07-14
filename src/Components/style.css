@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Oswald");
 @import url("https://fonts.googleapis.com/css?family=Open Sans");
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@800&display=swap");
 
 :root {
   /* Colors */
@@ -14,6 +15,8 @@
   --banner: #3b3c98;
   --bg: #fafafa;
   --bg-2: #d9dbff;
+  --vd-color: #e3e3e3;
+  --form: #fbfbfb;
 
   /* Font-Family */
   --ff-1: "Oswald", sans-serif;
@@ -25,10 +28,15 @@
   --fw-2: 600;
 
   /* Shadow */
-  --shadow: 0px 3px 6px #00000029;
+  --shadow: 0px 3px 10px #00000029;
 
   /* Gradient */
-  --gradient: linear-gradient(to bottom left, var(--primary-color),var(--bg),var(--bg-2));
+  --gradient: linear-gradient(
+    to bottom left,
+    var(--primary-color),
+    var(--bg),
+    var(--bg-2)
+  );
 }
 
 #navbarNav {
@@ -71,6 +79,7 @@ footer {
 }
 
 .single-box p {
+  background-color: var(--light-grey);
   font-family: var(--ff-3);
   color: var(--secondary-color);
   line-height: 1.9;
@@ -199,7 +208,7 @@ footer {
 }
 
 /* 
-**Bottom-Banner 
+ **Bottom-Banner 
 */
 
 .bottom-banner-section {
@@ -274,61 +283,13 @@ footer {
  **Testimonial 
 */
 
-/* .section-testimonial {
-  height: 600px;
-  width: 100%;
-}
-
-.testimonial-header p {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--ff-3);
-  font-weight: var(--fw-1);
-  margin-top: 25px;
-  font-size: 2.5rem;
-}
-
-.testimonial-card {
-  display: flex;
-  border: 1px solid var(--light-grey);
-  height: 350px;
-  width: 60%;
-  margin: auto;
-  margin-top: 30px;
-  background-color: var(--light-grey);
-  border-radius: 45px;
-  align-items: center;
-  justify-content: center;
-}
-
-.card-text .header-text p {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-right: 230px;
-  font-family: var(--ff-3);
-  font-weight: var(--fw-1);
-  font-size: 20px;
-  color: var(--secondary-color);
-}
-
-.card-text .main-text {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.card-text .main-text p {
-  padding-left: 265px;
-  padding-right: 70px;
-  font-family: var(--ff-3);
-  color: var(--secondary-color);
-} */
-
 /* 
  **TopBanner 
 */
+
+.whole-banner{
+  position: relative;
+}
 
 .top-banner {
   position: relative;
@@ -373,6 +334,8 @@ footer {
   width: 90%;
   margin-top: 155px;
   background: transparent url("./assets/Hero.png") 0% 0% no-repeat padding-box;
+  /* background-position:right; */
+  background-size: cover;
 }
 
 .banner-header {
@@ -405,7 +368,6 @@ footer {
   width: 100%;
   margin-top: 150px;
 }
-
 
 /* 
  **Form 
@@ -458,4 +420,367 @@ footer {
   --height: 50px;
   margin: 160%;
   text-transform: uppercase;
+}
+
+/* 
+ **VehicleBooking
+*/
+
+/* 
+ **Vehicle Details
+*/
+/* .vehicle {
+  padding: 60px;
+}
+
+.title {
+  top: 231px;
+  left: 100px;
+  text-align: left;
+  font: normal normal var(--fw-1) 45px/61px var(--ff-2);
+  letter-spacing: 0px;
+  font-weight: var(--fw-1);
+  color: var(--secondary-color);
+  padding: 20px;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+  height: 100px;
+  background: var(--vd-color);
+} */
+/* .row {
+  margin: 0 -5px;
+} */
+
+/* @media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 25px;
+  }
+}
+p {
+  background: var(--vd-color);
+  font-family: var(--ff-2);
+  font-weight: 1000;
+  font-size: 20px;
+}
+
+.heading {
+  top: 1042px;
+  left: 100px;
+  text-align: left;
+  font: normal normal var(--fw-1) 45px/61px var(--ff-2);
+  letter-spacing: 0px;
+  font-weight: var(--fw-1);
+  color: var(--secondary-color);
+  padding: 20px;
+  margin-top: 40px;
+}
+.column1 {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+  height: 100px;
+  background: var(--vd-color);
+}
+@media screen and (max-width: 600px) {
+  .column1 {
+    width: 100%;
+    display: block;
+    margin-bottom: 25px;
+  }
+}
+
+.column2 {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+  height: 100px;
+  background: var(--vd-color);
+}
+.column7 {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+  height: 100px;
+  background: var(--vd-color);
+}
+@media screen and (max-width: 600px) {
+  .column7 {
+    width: 100%;
+    display: block;
+    margin-bottom: 25px;
+  }
+}
+.column8 {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+  height: 100px;
+  background: var(--vd-color);
+}
+@media screen and (max-width: 600px) {
+  .column8 {
+    width: 100%;
+    display: block;
+    margin-bottom: 25px;
+  }
+}
+.column6 {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+  height: 100px;
+  background: var(--vd-color);
+}
+@media screen and (max-width: 600px) {
+  .column6 {
+    width: 100%;
+    display: block;
+    margin-bottom: 25px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .column2 {
+    width: 100%;
+    display: block;
+    margin-bottom: 25px;
+  }
+} */
+
+/* 
+ **Charges
+*/
+
+/* .charges {
+  padding: 60px;
+  padding-bottom: 20px;
+} */
+/* .card {
+  background-color: #e3e3e3;
+  display: grid;
+  width: 80%;
+} */
+
+/* 
+ **Passenger Details
+*/
+
+/* .passDetails {
+  left: 100px;
+  text-align: left;
+  font: normal normal var(--fw-1) 45px/61px var(--ff-2);
+  letter-spacing: 0px;
+  font-weight: var(--fw-1);
+  color: var(--secondary-color);
+  padding-left: 60px;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+.Passenger {
+  text-align: left;
+}
+.column3 {
+  float: left;
+  width: 34%;
+  padding: 0 40px;
+  height: 48%;
+  background: var(--vd-color);
+}
+@media screen and (max-width: 500px) {
+  .column3 {
+    width: 100%;
+    display: block;
+    margin-bottom: 25px;
+  }
+}
+.column4 {
+  float: left;
+  width: 25%;
+  padding: 0 40px;
+  height: 48%;
+  background: var(--vd-color);
+}
+@media screen and (max-width: 500px) {
+  .column4 {
+    width: 100%;
+    display: block;
+    margin-bottom: 25px;
+  }
+}
+.column5 {
+  float: left;
+  text-align: left;
+  width: 34%;
+  padding: 0 40px;
+  height: 34.5vh;
+  background: var(--vd-color);
+}
+@media screen and (max-width: 500px) {
+  .column5 {
+    width: 100%;
+    display: block;
+    margin-bottom: 25px;
+  }
+}
+
+input[type="text"] {
+  width: 29vh;
+  padding: 10px 20px;
+  margin: 8px 0;
+  height: 38px;
+  box-sizing: border-box;
+}
+input[type="time"] {
+  width: 29vh;
+  padding: 10px 20px;
+  margin: 8px 0;
+  height: 38px;
+  box-sizing: border-box;
+}
+input[type="date"] {
+  width: 29vh;
+  padding: 10px 20px;
+  margin: 8px 0;
+  height: 38px;
+  box-sizing: border-box;
+}
+.card-body {
+  padding-bottom: 20px;
+}
+label {
+  font-weight: bolder;
+  font-family: var(--ff-2);
+  font-size: 19px;
+  text-align: left;
+} */
+/* .form-group {
+  padding: 19px 30px 5px 3px;
+  margin-left: 25px;
+  margin-right: 20px;
+} */
+/* .btn-1 {
+  border-radius: 25px;
+  border: 2px solid var(--secondary-color);
+  height: 40px;
+  width: 25vh;
+  font-weight: 500;
+  font-size: 1.2rem;
+  text-align: center;
+  justify-content: center;
+}
+.button {
+  padding-top: 60px;
+  display: block;
+  box-sizing: content-box;
+  justify-content: center;
+  align-items: center;
+  padding-left: 65vh;
+} */
+
+
+
+/* 
+ **Destination Form 
+*/
+
+.search{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  background: none;
+}
+
+.search-car{
+  position: absolute;
+  background: var(--form);
+  padding: 15px 20px;
+  /* text-align: center; */
+  width: 55rem;
+  height: 28vh;
+  border: 1px solid var(--form);
+  border-radius: 45px;
+  box-shadow: var(--shadow);
+}
+
+.search-car .btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.search-car .search-btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--greyish-black);
+  color: var(--primary-color);
+  font-family: var(--ff-3);
+  font-weight: var(--fw-1);
+  border-radius: 30px;
+  width: 25%;
+  height: 6vh;
+}
+
+.search form{
+  display: flex;
+  align-items: center;
+}
+
+.search .inputBox{
+  /* display: flex; */
+  padding: 10px 15px;
+  width: 13rem;
+  margin-top: 13px;
+  margin-right: 10px;
+}
+
+.search .inputBox label{
+  font-size: 17px;
+  font-family: var(--ff-3);
+  font-weight: var(--fw-2);
+  color: var(--secondary-color);
+  margin-bottom: 10px;
+}
+
+.search .inputBox input,
+.search .inputBox select{
+  border: 1px solid #707070;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 13px;
+  width: 100%;;
+}
+
+.search .inputBox option{
+  height: 40px;
+}
+
+
+/* 
+ **Wizard 
+*/
+
+.section-flow{
+  height: 800px;
+  width: 100%;
+}
+
+.flow-header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 180px;
+}
+
+.flow-header h1{
+  font-family: var(--ff-3);
+  font-weight: var(--fw-1);
+  font-size: 3rem;
 }
