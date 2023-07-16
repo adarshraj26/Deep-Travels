@@ -1,6 +1,15 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
+import Wizard from "./wizard";
+import BottomBanner from "./banner";
+import Testimonial from "./testimonial";
 
 const TopBanner = () => {
+    const navigate = useNavigate()
+    function goToAbout(){
+        navigate("/Car")
+    }
+
     return (
         <>
             <section className="top-banner">
@@ -54,11 +63,14 @@ const TopBanner = () => {
                             </div>
                         </form>
                         <div className="btn">
-                            <button className="search-btn">Search</button>
+                            <button onClick={goToAbout} className="search-btn">Search</button>
                         </div>
                     </div>
                 </div>
             </section>
+            <Wizard/>
+            <BottomBanner/>
+            <Testimonial/>
         </>
     )
 }

@@ -1,5 +1,5 @@
 import React from 'react'
-import './style.css';
+import { Link } from 'react-router-dom';
 
 const Carbook = () => {
     return (
@@ -14,7 +14,7 @@ const Carbook = () => {
                         <div class="card-body">
                             <h5 class="card-title">Maruti Suzuki Dezire</h5>
                             <p class="card-text">&#8377; 2000</p>
-                            <a href="#" class="btn btn-primary">Book Now</a>
+                            <Link to={"/VehicleDetails"} className='btn btn-primary'>Book Now</Link>
                         </div>
                     </div>
                     <div class="card col-sm-12" style={{ width: "22rem" }}>
@@ -22,7 +22,7 @@ const Carbook = () => {
                         <div class="card-body">
                             <h5 class="card-title">Toyota Innova</h5>
                             <p class="card-text">&#8377; 2000</p>
-                            <a href="#" class="btn btn-primary">Book Now</a>
+                            <Link to={"/VehicleDetails"} className='btn btn-primary'>Book Now</Link>
                         </div>
                     </div>
 
@@ -31,7 +31,7 @@ const Carbook = () => {
                         <div class="card-body">
                             <h5 class="card-title">Honda Amaze</h5>
                             <p class="card-text">&#8377; 2000</p>
-                            <a href="#" class="btn btn-primary">Book Now</a>
+                            <Link to={"/VehicleDetails"} className='btn btn-primary'>Book Now</Link>
                         </div>
                     </div>
                 </div>
@@ -41,7 +41,7 @@ const Carbook = () => {
                         <div class="card-body">
                             <h5 class="card-title">Maruti Suzuki Dezire</h5>
                             <p class="card-text">&#8377; 2000</p>
-                            <a href="#" class="btn btn-primary">Book Now</a>
+                            <Link to={"/VehicleDetails"} className='btn btn-primary'>Book Now</Link>
                         </div>
                     </div>
                     <div class="card col-sm-12" style={{ width: "22rem" }}>
@@ -49,7 +49,7 @@ const Carbook = () => {
                         <div class="card-body">
                             <h5 class="card-title">Maruti Suzuki Dezire</h5>
                             <p class="card-text">&#8377; 2000</p>
-                            <a href="#" class="btn btn-primary">Book Now</a>
+                            <Link to={"/VehicleDetails"} className='btn btn-primary'>Book Now</Link>
                         </div>
                     </div>
                     <div class="card col-sm-12" style={{ width: "22rem" }}>
@@ -57,7 +57,7 @@ const Carbook = () => {
                         <div class="card-body">
                             <h5 class="card-title">Maruti Suzuki Dezire</h5>
                             <p class="card-text">&#8377; 2000</p>
-                            <a href="#" class="btn btn-primary">Book Now</a>
+                            <Link to={"/VehicleDetails"} className='btn btn-primary'>Book Now</Link>
                         </div>
                     </div>
                 </div>

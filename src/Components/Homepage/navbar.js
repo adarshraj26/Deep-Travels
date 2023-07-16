@@ -1,13 +1,5 @@
 import React from "react";
 import "../style.css";
-import Carbook from "../Car";
-import Testimonial from "./testimonial";
-import BottomBanner from "./banner";
-import TopBanner from "./Topbanner";
-import Charges from "../Vehiclebooking/charges";
-import VehicleDetails from "../Vehiclebooking/VehicleDetails";
-import Passenger from "../Vehiclebooking/Passenger";
-
 
 const Navbar = () => {
   return (

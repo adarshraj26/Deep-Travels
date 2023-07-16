@@ -1,5 +1,4 @@
 import React from 'react';
-import '../style.css';
 
 const BottomBanner = () => {
   return (
@@ -11,7 +10,7 @@ const BottomBanner = () => {
       <div className="banner-text-div">
         <span className="banner-text">
           <p className="text-end small-text">Find the right type of car with us</p>
-          <p className="text-end big-text">Find the right car with<br /> us with over 500 +<br /> options</p>
+          <p className=" big-text">Find the right car with<br /> us with over 500 +<br /> options</p>
         </span>
       </div>
     </section>

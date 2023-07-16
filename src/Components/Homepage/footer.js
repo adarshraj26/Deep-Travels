@@ -6,7 +6,7 @@ import logo from '../assets/logo.png';
 const Footer = () => {
   return (
     <>
-      <footer>
+      <footer className='footer-section'>
         <div className="container">
           <div className="row">
             <div className="col-lg-4 col-sm-6">
@@ -26,7 +26,7 @@ const Footer = () => {
                 </ul>
               </div>
             </div>
-            <div className="col-lg-4 col-sm-6">
+            <div className="col-lg-4 col-sm-6 newsletter-box">
               <div className="single-box">
                 <div className='single-box-content'>
                   <h2 >Wanna get more special offers:</h2>

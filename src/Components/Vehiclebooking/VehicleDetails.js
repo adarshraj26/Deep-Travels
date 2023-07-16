@@ -2,6 +2,8 @@ import React from "react";
 import '../style.css';
 import "@fontsource/open-sans";
 import Charges from "./charges";
+import Passenger from "./Passenger";
+
 const VehicleDetails = () => {
   return (
     <div className="vehicle">
@@ -32,7 +34,8 @@ const VehicleDetails = () => {
           <b>Seat - </b>4
         </p>
       </div>
-
+    <Charges/>
+    <Passenger/>
     </div>
     // </div>
   );
