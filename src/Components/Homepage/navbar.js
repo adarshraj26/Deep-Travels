@@ -4,7 +4,7 @@ import "../style.css";
 const Navbar = () => {
   return (
     <div>
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <nav className="navbar fixed-top navbar-expand-lg navbar-light bg-light">
         <a className="navbar-brand" href="#">
          
         </a>

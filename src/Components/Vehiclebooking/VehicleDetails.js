@@ -8,7 +8,7 @@ const VehicleDetails = () => {
   return (
     <div className="vehicle">
       <h2 className="title">Vehicle Details</h2>
-      {/* <div className="row"> */}
+      <div className="">
       <div className="column">
         <p>
           <b>Car - </b>
