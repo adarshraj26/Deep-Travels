@@ -1394,4 +1394,64 @@ body {
   .main-card .card {
     margin: 20px;
   }
+
+
+  /* ====================== TESTIMONIALS ======================= */
+
+  .carousel-inner{
+    position: absolute;
+    /* height: 428px; */
+    width: 100%;
+    margin-top: 34px;
+  }
+
+  .carousel-inner .active{
+        /* display: flex; */
+        display: block;
+        width: 100%;
+        /* height: 170%; */
+        padding: 0;
+        margin: 0;
+  }
+
+  .carousel-item{
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .testimonial-profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .testimonial-profile img{
+    height: 94px;
+    width: 94px;
+  }
+
+  .testimonial-text{
+    /* width: 263%; */
+    margin: 0;
+    padding: 0;
+    /* height: 330px; */
+  }
+
+  .testimonial-text .testimoial-name{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .testimonial-message{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    /* margin: auto; */
+    padding: 0 62px;
+  }
+
 }
