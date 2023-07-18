@@ -5,20 +5,20 @@ import React from "react";
 const Testimonial = () => {
     return (
         <>
-            {/* <section className="section-testimonial">
+            <section className="section-testimonial">
                 <div className="testimonial-div">
                     <div className="testimonial-header">
                         <h1>Testimonials</h1>
-                    </div> */}
+                    </div>
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
-                    <div class="carousel-item active">
+                    <div class="carousel-item active" style={{display:"flex"}}>
                         <div className="testimonial-profile">
                             <img src={require("../assets/Car-1.jpg")}/>
                         </div>
                         <div className="testimonial-text">
                             <div className="testimonial-name">
-                                <p>Kawaljeet Singh</p>
+                                <p style={{fontWeight:"bolder"}}>Kawaljeet Singh</p>
                             </div>
                             <div className="testimonial-message">
                                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem debitis ipsa, nostrum dolorem laudantium sint ut vel maxime commodi non saepe ducimus ratione veritatis ea amet porro corrupti magni ab. Corporis id maxime, eligendi quaerat non cumque atque asperiores praesentium quam corrupti ipsa quis at aut, vel veritatis expedita ex, quia et. Quam dolor fugiat neque voluptatibus, tempora porro? Aut, suscipit earum, impedit optio inventore vitae facilis maxime quia temporibus voluptatibus veniam vel tempora dolores.</p>
@@ -61,8 +61,8 @@ const Testimonial = () => {
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
-            {/* </div> */}
-            {/* </section> */}
+            </div>
+            </section>
         </>
     )
 }
