@@ -56,6 +56,7 @@
   box-shadow: var(--shadow);
   opacity: 1;
   padding: 50px;
+
 }
 
 .navbar-brand {
@@ -619,7 +620,7 @@ footer {
 
 /* vehicle details */
 .vehicle {
-  padding: 60px;
+  padding: 40px;
 }
 
 .title {
@@ -630,13 +631,20 @@ footer {
   letter-spacing: 0px;
   font-weight: var(--fw-1);
   color: var(--secondary-color);
-  padding: 20px;
+  padding: 55px;
 }
-
+@media screen and (max-width: 600px) {
+  .title {
+    width: 100%;
+    display: block;
+    margin-bottom: 25px;
+  }
+}
 .column {
   float: left;
   width: 25%;
-  padding: 0 10px;
+  display: block;
+  padding: 2px 10px 2px;
   height: 100px;
   background: var(--vd-color);
 }
@@ -653,7 +661,7 @@ footer {
   }
 }
 
-.column p {
+.chargedetails {
   background: var(--vd-color);
   font-family: var(--ff-2);
   font-weight: 1000;
@@ -666,14 +674,16 @@ footer {
   text-align: left;
   font: normal normal var(--fw-1) 45px/61px var(--ff-2);
   letter-spacing: 0px;
-  font-weight: bold;
+  /* font-weight: bold; */
   color: var(--secondary-color);
-  padding: 20px;
-  margin-top: 40px;
+  padding: 30px;
+  margin-top: 10px;
 }
 
 .column1 {
   float: left;
+  display: flex;
+  justify-content: center;
   width: 25%;
   padding: 0 10px;
   height: 100px;
@@ -689,18 +699,23 @@ footer {
 }
 
 /* charges */
+.block{
+  background-color: #e3e3e3;
+}
 .column2 {
   float: left;
-  width: 25%;
-  padding: 0 10px;
-  height: 100px;
+  width: 23%;
+  padding: 3px;
+ height: 100px;
   background: var(--vd-color);
 }
 
 .column7 {
   float: left;
-  width: 25%;
-  padding: 0 10px;
+  width: 24%;
+  display: flex;
+  justify-content: center;
+  padding: 3px;
   height: 100px;
   background: var(--vd-color);
 }
@@ -715,8 +730,11 @@ footer {
 
 .column8 {
   float: left;
-  width: 25%;
-  padding: 0 10px;
+  width: 28%;
+  display: flex;
+  justify-content: center;
+  padding-right:  10px;
+  margin-right: 10px;
   height: 100px;
   background: var(--vd-color);
 }
@@ -731,8 +749,10 @@ footer {
 
 .column6 {
   float: left;
-  width: 25%;
-  padding: 0 10px;
+  width: 24%;
+  display: flex;
+  justify-content: center;
+  padding: 2px 10px;
   height: 100px;
   background: var(--vd-color);
 }
@@ -754,8 +774,8 @@ footer {
 }
 
 .charges {
-  padding: 60px;
-  padding-bottom: 20px;
+  padding: 35px;
+  /* padding-bottom: 20px; */
 }
 
 /* passenger details */
@@ -799,15 +819,22 @@ input[type="date"] {
   height: 38px;
   box-sizing: border-box;
 }
+<<<<<<< HEAD
 .react-tel-input {
   width: 80px;
+=======
+.react-tel-input{
+  width:80px; 
+>>>>>>> 6713b991816d459b7c0fdc6a143dcc1869542ad9
 }
 .react-tel-input .form-control {
   width: 32vh !important;
   padding: 10px 38px !important;
-  margin: 8px 0 !important;
+  /* margin: 8px 0 !important; */
   height: 38px !important;
   box-sizing: border-box !important;
+  margin-bottom: 30px !important;
+  margin-top: inherit !important;
   border: none !important;
 }
 #phone {
@@ -819,8 +846,40 @@ input[type="date"] {
 #phone:focus:invalid {
   border-color: red;
 }
+<<<<<<< HEAD
 @media screen and (min-width: 600px) {
+=======
+@media screen and (min-width:500px) {
+>>>>>>> 6713b991816d459b7c0fdc6a143dcc1869542ad9
   input[type="text"] {
+    max-width: 100%;
+    display: block;
+    margin-bottom: 25px;
+  }
+}
+@media screen and (min-width: 500px) {
+  input[type="date"] {
+    max-width: 100%;
+    display: block;
+    margin-bottom: 25px;
+  }
+}
+@media screen and (min-width: 500px) {
+  input[type="time"] {
+    max-width: 100%;
+    display: block;
+    margin-bottom: 25px;
+  }
+}
+@media screen and (min-width: 500px) {
+  .react-tel-input .form-control {
+    max-width: 100%;
+    display: block;
+    margin-bottom: 25px;
+  }
+}
+@media screen and (min-width: 500px) {
+  .locate {
     max-width: 100%;
     display: block;
     margin-bottom: 25px;
@@ -894,6 +953,7 @@ label {
   font-family: var(--ff-2);
   font-size: 21px;
   text-align: left;
+  padding: 10px;
 }
 
 .btn-1 {
