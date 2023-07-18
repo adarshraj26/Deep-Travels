@@ -1,43 +1,49 @@
 import React from "react";
-import '../style.css';
+import "../style.css";
 import "@fontsource/open-sans";
 import Charges from "./charges";
 import Passenger from "./Passenger";
 
 const VehicleDetails = () => {
   return (
-    <div className="vehicle">
-      <h2 className="title">Vehicle Details</h2>
-      <div className="">
-      <div className="column">
-        <p>
-          <b>Car - </b>
-          Dezire
-        </p>
-        <p>
-          <b>Type - </b>
-          One Way
-        </p>
-      </div>
-      <div className="column">
-        <p><b>Source - </b>Jamshedpur</p>
-        <p><b>Speed Limit - </b>60kmph</p>
-      </div>
-      <div className="column1">
-        <p>
-          <b>Destination - </b>Ranchi
-        </p>
-        <p></p>
-      </div>
-      <div className="column1">
-        <p>
-          <b>Seat - </b>4
-        </p>
-      </div>
-    <Charges/>
-    <Passenger/>
-    </div>
-    // </div>
+    <>
+      <div className="vehicle">
+        <h2 className="title">Vehicle Details</h2>
+        <div className="block">
+          <div className="column">
+            <p className="chargedetails">
+              <b>Car - </b>
+              Dezire
+            </p>
+            <p className="chargedetails">
+              <b>Type - </b>
+              One Way
+            </p>
+          </div>
+          <div className="column">
+            <p className="chargedetails">
+              <b>Source - </b>Jamshedpur
+            </p>
+            <p className="chargedetails">
+              <b>Speed Limit - </b>60kmph
+            </p>
+          </div>
+          <div className="column1">
+            <p className="chargedetails">
+              <b>Destination - </b>Ranchi
+            </p>
+          </div>
+          <div className="column1">
+            <p className="chargedetails">
+              <b>Seat - </b>4
+            </p>
+          </div>
+        </div>
+        </div>
+      <Charges />
+      <Passenger />
+    </>
+    //
   );
 };
 
