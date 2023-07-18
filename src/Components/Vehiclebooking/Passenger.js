@@ -1,51 +1,156 @@
-import React from "react";
+// import React from "react";
 
 
+// const Passenger = () => {
+//   return (
+//     <>
+//       <div className="container-1">
+//         <h2 className="passDetails">Passenger Details</h2>
+//         <div className="card-group">
+//           <div className="card-img-card-img-overlay">
+//             <div className="card-body-1">
+//               <label for="InputName col-sm-4">Name</label>
+//               <input type="text" class="form-control" id="InputName" />
+//               <label for="inputJourney col-sm-4">Journey Date</label>
+//               <input type="date" class="form-control" id="inputJourney" />
+//               <label htmlFor="inputSource col-sm-4"> Source Location</label>
+//               <input type="text" class="form-control" id="inputSource" />
+//             </div>
+//           </div>
+//           <div className="card-img-card-img-overlay">
+//             <div className="card-body-2">
+//               <label for="inputEmail col-sm-4">Email</label>
+//               <input type="text" class="form-control" id="inputEmail" />
+//               <label for="inputTime col-sm-4">Pickup Time</label>
+//               <input type="time" class="form-control" id="inputTime" />
+//               <label for="inputAddress2 col-sm-4">Destination Location</label>
+//               <input type="text" class="form-control" id="inputAddress2" />
+//             </div>
+//           </div>
+//           <div className="card-img-card-img-overlay">
+//             <div className="card-body-3">
+//               <label for="inputState col-sm-6">Mobile Number</label>
+//               <input type="text" class="form-control" id="inputState" />
+//               <label for="inputDestination col-sm-6">Pickup Address</label>
+//               <input type="text" class="form-control" id="inputDestination" />
+//             </div>
+//           </div>
+          
+//             <div className="card-text-1">
+//           <button type="submit" class="btn-1 bg-black text-white">
+//             Submit
+//           </button>
+//           </div>
+//           </div>
+//         </div>
+    
+//     </>
+//   );
+// };
+
+// export default Passenger;
+
+
+
+import React, { useState } from "react";
+import PhoneInput from "react-phone-input-2";
+import "react-phone-input-2/lib/style.css";
 const Passenger = () => {
+  const [PhoneNumber, setPhoneNumber] = useState("");
+  const [valid, setValid] = useState(true);
+  const handleChange = (value) => {
+    setPhoneNumber(value);
+    // setValid(validatePhoneNumber(value));
+  };
+  // const validatePhoneNumber=(PhoneNumber)=>{
+  // // const phoneNumberPattern=/^\d{12}$/;
+  // // const phoneNumberPattern=/^[+]91(9|8|7)\d{9}$/;
+  // // const phoneNumberPattern=/^[+]{1}(?:[0-9\-\(\)\/\.]\s?){6, 15}[0-9]{1}$/;
+  // return phoneNumberPattern.test(PhoneNumber);
+  // }
+
   return (
     <>
       <div className="container-1">
         <h2 className="passDetails">Passenger Details</h2>
-        <div className="card-group">
-          <div className="card-img-card-img-overlay">
-            <div className="card-body-1">
-              <label for="InputName col-sm-4">Name</label>
-              <input type="text" class="form-control" id="InputName" />
-              <label for="inputJourney col-sm-4">Journey Date</label>
-              <input type="date" class="form-control" id="inputJourney" />
-              <label htmlFor="inputSource col-sm-4"> Source Location</label>
-              <input type="text" class="form-control" id="inputSource" />
+        <div className="card-2">
+          <div className="card-group">
+            <div className="card-img-card-img-overlay">
+              <div className="card-body-1">
+                <label for="InputName col-sm-4">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="InputName"
+                  placeholder=" Enter Name"
+                />
+                <label for="inputJourney col-sm-4">Journey Date</label>
+                <input type="date" class="form-control" id="inputJourney" />
+                <label htmlFor="inputSource col-sm-4"> Source Location</label>
+                {/* <input type="text" class="form-control" id="inputSource" /> */}
+                <select  className="locate"required>
+                  <option disabled selected hidden>
+                    Source Location
+                  </option>
+                  <option>Ranchi</option>
+                  <option>Jamshedpur</option>
+                </select>
+              </div>
+            </div>
+            <div className="card-img-card-img-overlay">
+              <div className="card-body-2">
+                <label for="inputEmail col-sm-4">Email</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputEmail"
+                  placeholder="Enter Email"
+                />
+                <label for="inputTime col-sm-4">Pickup Time</label>
+                <input type="time" class="form-control" id="inputTime" />
+                <label for="inputAddress2 col-sm-4">Destination Location</label>
+                {/* <input type="text" class="form-control" id="inputAddress2" /> */}
+                <select className="locate"required>
+                  <option disabled selected hidden>
+                    Destination Location
+                  </option>
+                  <option>Ranchi</option>
+                  <option>Jamshedpur</option>
+                </select>
+              </div>
+            </div>
+            <div className="card-img-card-img-overlay">
+              <div className="card-body-3">
+                <label for="phone col-sm-6">Mobile Number</label>
+
+                <PhoneInput
+                  country={"in"}
+                  class="form-control"
+                  id="phone"
+                  placeholder="xxx-xxx-xxxx"
+                  pattern="[6789][0-9]{9}"
+                  required
+                  value={PhoneNumber}
+                  onChange={handleChange}
+                  inputProps={{ required: true }}
+                />
+              
+
+                <label for="inputDestination col-sm-6">Pickup Address</label>
+                <input type="text" class="form-control" id="inputDestination" />
+              </div>
             </div>
           </div>
-          <div className="card-img-card-img-overlay">
-            <div className="card-body-2">
-              <label for="inputEmail col-sm-4">Email</label>
-              <input type="text" class="form-control" id="inputEmail" />
-              <label for="inputTime col-sm-4">Pickup Time</label>
-              <input type="time" class="form-control" id="inputTime" />
-              <label for="inputAddress2 col-sm-4">Destination Location</label>
-              <input type="text" class="form-control" id="inputAddress2" />
-            </div>
-          </div>
-          <div className="card-img-card-img-overlay">
-            <div className="card-body-3">
-              <label for="inputState col-sm-6">Mobile Number</label>
-              <input type="text" class="form-control" id="inputState" />
-              <label for="inputDestination col-sm-6">Pickup Address</label>
-              <input type="text" class="form-control" id="inputDestination" />
-            </div>
-          </div>
-          
-            <div className="card-text-1">
-          <button type="submit" class="btn-1 bg-black text-white">
-            Submit
-          </button>
-          </div>
+          <div className="card-img-1">
+            <button type="submit" className="btn-1 bg-black text-white">
+              Submit
+            </button>
           </div>
         </div>
-    
+      </div>
     </>
   );
 };
 
 export default Passenger;
+
