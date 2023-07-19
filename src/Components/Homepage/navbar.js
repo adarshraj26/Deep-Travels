@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import "../style.css";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
   return (
     <div>
-      <nav className="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+      <nav className="navbar sticky-top navbar-expand-lg navbar-light bg-light">
         <a className="navbar-brand" href="#"></a>
         <button
           className="navbar-toggler"
@@ -18,7 +19,7 @@ const Navbar = () => {
           onClick={() => setNavbarOpen((prev) => !prev)}
         >
           <span className="navbar-toggler-icon"></span>
-          {/* {navbarOpen ? "close" : "open"} */}
+          {navbarOpen ? "close" : "open"}
         </button>
 
         <div className="collapse navbar-collapse" id="navbarNav" >
@@ -34,9 +35,12 @@ const Navbar = () => {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link text-black" href="#">
+              <Link to="/Contact" className="nav-link text-black" >Contact</Link>
+              {/* <a className="nav-link text-black" href="#">
                 Contact
-              </a>
+              </a> */}
+              
+              
             </li>
           </ul>
           {/* <div className="hamburger" onClick={() => setShowMenu(!showMenu)}>

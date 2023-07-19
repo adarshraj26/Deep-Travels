@@ -619,7 +619,7 @@ footer {
 /* ==================== VehicleBooking Page ===================== */
 
 /* vehicle details */
-.vehicle {
+/* .vehicle {
   padding: 40px;
 }
 
@@ -647,13 +647,13 @@ footer {
   padding: 2px 10px 2px;
   height: 100px;
   background: var(--vd-color);
-}
+} */
 
 /* .row {
   margin: 0 -5px;
 } */
 
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
   .column {
     width: 100%;
     display: block;
@@ -674,7 +674,7 @@ footer {
   text-align: left;
   font: normal normal var(--fw-1) 45px/61px var(--ff-2);
   letter-spacing: 0px;
-  /* font-weight: bold; */
+  font-weight: bold;
   color: var(--secondary-color);
   padding: 30px;
   margin-top: 10px;
@@ -696,10 +696,10 @@ footer {
     display: block;
     margin-bottom: 25px;
   }
-}
+} */
 
 /* charges */
-.block{
+/* .block{
   background-color: #e3e3e3;
 }
 .column2 {
@@ -775,11 +775,11 @@ footer {
 
 .charges {
   padding: 35px;
-  /* padding-bottom: 20px; */
-}
+  padding-bottom: 20px;
+} */
 
 /* passenger details */
-.passDetails {
+/* .passDetails {
   left: 100px;
   text-align: left;
   font: normal normal var(--fw-1) 45px/61px var(--ff-2);
@@ -819,18 +819,13 @@ input[type="date"] {
   height: 38px;
   box-sizing: border-box;
 }
-<<<<<<< HEAD
-.react-tel-input {
-  width: 80px;
-=======
 .react-tel-input{
   width:80px; 
->>>>>>> 6713b991816d459b7c0fdc6a143dcc1869542ad9
 }
 .react-tel-input .form-control {
   width: 32vh !important;
   padding: 10px 38px !important;
-  /* margin: 8px 0 !important; */
+  margin: 8px 0 !important;
   height: 38px !important;
   box-sizing: border-box !important;
   margin-bottom: 30px !important;
@@ -846,11 +841,7 @@ input[type="date"] {
 #phone:focus:invalid {
   border-color: red;
 }
-<<<<<<< HEAD
-@media screen and (min-width: 600px) {
-=======
 @media screen and (min-width:500px) {
->>>>>>> 6713b991816d459b7c0fdc6a143dcc1869542ad9
   input[type="text"] {
     max-width: 100%;
     display: block;
@@ -886,10 +877,10 @@ input[type="date"] {
   }
 }
 .container-1 {
-  padding: 35px;
+  padding: 35px; */
   /* height: auto; */
-}
-@media screen and (max-width: 600px) {
+/* } */
+/* @media screen and (max-width: 600px) {
   .container-1 {
     width: 100%;
     display: block;
@@ -904,9 +895,9 @@ input[type="date"] {
 }
 .card-img-1 {
   position: relative;
-  padding-bottom: 30px;
+  padding-bottom: 30px; */
   /* padding-right: 12%; */
-  justify-content: center;
+  /* justify-content: center;
   display: flex;
   box-sizing: border-box;
   align-items: center;
@@ -923,10 +914,10 @@ input[type="date"] {
   display: block;
   justify-content: space-around;
   margin-bottom: 6rem;
-  padding-left: 20px;
+  padding-left: 20px; */
   /* height:350px; */
-}
-@media screen and (max-width: 600px) {
+/* } */
+/* @media screen and (max-width: 600px) {
   .card-group {
     width: 100%;
     display: block;
@@ -981,7 +972,7 @@ label {
     display: block;
     margin-bottom: 25px;
   }
-}
+} */
 
 /* ======================= Destination Form ======================== */
 
@@ -1160,24 +1151,25 @@ label {
 
 /* ======================= CONTACT PAGE ====================== */
 
-body {
+/* body {
   display: grid;
   width: 100%;
   height: 100vh;
   align-items: center;
   background: #8e2de2;
-}
+} */
 
 .contact-in {
-  width: 80%;
-  height: auto;
-  margin: auto;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 10px;
-  border-radius: 10px;
-  background: #ffffff;
-  box-shadow: 0px 0px 10px 0px #666;
+    width: 80%;
+    height: 610px;
+    margin-top: 50%;
+    margin: 102px 210px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    border-radius: 10px;
+    background: #ffffff;
+    box-shadow: 0px 0px 10px 0px #666;
 }
 
 .contact-map {

@@ -3,10 +3,13 @@ import "../style.css";
 import "@fontsource/open-sans";
 import Charges from "./charges";
 import Passenger from "./Passenger";
+import Navbar from "../Homepage/navbar";
+import Footer from "../Homepage/footer";
 
 const VehicleDetails = () => {
   return (
     <>
+    <Navbar/>
       <div className="vehicle">
         <h2 className="title">Vehicle Details</h2>
         <div className="block">
@@ -42,6 +45,7 @@ const VehicleDetails = () => {
         </div>
       <Charges />
       <Passenger />
+      <Footer/>
     </>
     //
   );
