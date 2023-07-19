@@ -7,10 +7,11 @@ import Passenger from "./Passenger";
 const VehicleDetails = () => {
   return (
     <>
-      <div className="vehicle">
-        <h2 className="title">Vehicle Details</h2>
-        <div className="block">
-          <div className="column">
+     <h2 className="title">Vehicle Details</h2>
+      <div className="container-4">
+       
+        <div className="card-4">
+          <div className="card-body-7">
             <p className="chargedetails">
               <b>Car - </b>
               Dezire
@@ -20,7 +21,7 @@ const VehicleDetails = () => {
               One Way
             </p>
           </div>
-          <div className="column">
+          <div className="card-body-8">
             <p className="chargedetails">
               <b>Source - </b>Jamshedpur
             </p>
@@ -28,12 +29,12 @@ const VehicleDetails = () => {
               <b>Speed Limit - </b>60kmph
             </p>
           </div>
-          <div className="column1">
+          <div className="card-body-9">
             <p className="chargedetails">
               <b>Destination - </b>Ranchi
             </p>
           </div>
-          <div className="column1">
+          <div className="card-body-10">
             <p className="chargedetails">
               <b>Seat - </b>4
             </p>
