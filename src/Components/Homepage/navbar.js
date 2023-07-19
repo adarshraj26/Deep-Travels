@@ -25,9 +25,10 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarNav" >
           <ul className={`navbar-nav ms-auto order-6${navbarOpen ? ' show-menu' : ''}`} >
             <li className="nav-item active">
-              <a className="nav-link text-black" href="#" aria-current="page">
+              {/* <a className="nav-link text-black" href="#" aria-current="page">
                 Home
-              </a>
+              </a> */}
+              <Link to="/" className="nav-link text-black" aria-current="page">Home</Link>
             </li>
             <li className="nav-item">
               <a className="nav-link text-black" href="#">
