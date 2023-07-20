@@ -1,9 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import Navbar from './Homepage/navbar';
+import Footer from './Homepage/footer';
 
 const Carbook = () => {
     return (
         <>
+        <Navbar/>
             <section className='section-card'>
                 <div className='card-header'>
                     <h1 class="text-start">Cabs from Jamshedpur to Ranchi</h1>
@@ -62,6 +65,7 @@ const Carbook = () => {
                     </div>
                 </div>
             </section>
+            <Footer/>
         </>
     )
 }

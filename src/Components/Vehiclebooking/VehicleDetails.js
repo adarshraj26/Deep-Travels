@@ -3,10 +3,14 @@ import "../style.css";
 import "@fontsource/open-sans";
 import Charges from "./charges";
 import Passenger from "./Passenger";
+import Navbar from "../Homepage/navbar";
+import Footer from "../Homepage/footer";
 
 const VehicleDetails = () => {
   return (
     <>
+    <Navbar/>
+    <section className="section-vehicle-details">
      <h2 className="title">Vehicle Details</h2>
       <div className="container-4">
        
@@ -41,10 +45,12 @@ const VehicleDetails = () => {
           </div>
         </div>
         </div>
+        </section>
       <Charges />
       <Passenger />
+      <Footer/>
     </>
-    //
+
   );
 };
 

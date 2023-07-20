@@ -1,8 +1,11 @@
 import React from "react";
+import Navbar from "./Homepage/navbar";
+import Footer from "./Homepage/footer";
 
 const Contactform = () => {
     return (
         <>
+        <Navbar/>
             <div className="contact-in">
                 <div className="contact-map">
                         <iframe
@@ -25,6 +28,7 @@ const Contactform = () => {
                     </form>
                 </div>
             </div>
+            <Footer/>
         </>
     )
 }

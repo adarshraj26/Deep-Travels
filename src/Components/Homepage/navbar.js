@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import "../style.css";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
   return (
-    <div>
-      <nav className="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+    <div className="navbar-div">
+      <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <a className="navbar-brand" href="#"></a>
         <button
           className="navbar-toggler"
@@ -15,7 +16,7 @@ const Navbar = () => {
           aria-controls="navbarNavDropdown"
           aria-expanded="false"
           aria-label="Toggle navigation"
-          onClick={() => setNavbarOpen((prev) => !prev)}
+          // onClick={() => setNavbarOpen((prev) => !prev)}
         >
           <span className="navbar-toggler-icon"></span>
           {/* {navbarOpen ? "close" : "open"} */}
@@ -24,9 +25,7 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarNav" >
           <ul className={`navbar-nav ms-auto order-6${navbarOpen ? ' show-menu' : ''}`} >
             <li className="nav-item active">
-              <a className="nav-link text-black" href="#" aria-current="page">
-                Home
-              </a>
+              <Link to="/" className="nav-link text-black" aria-current="page">Home</Link>
             </li>
             <li className="nav-item">
               <a className="nav-link text-black" href="#">
@@ -34,9 +33,12 @@ const Navbar = () => {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link text-black" href="#">
+              <Link to="/Contact" className="nav-link text-black" >Contact</Link>
+              {/* <a className="nav-link text-black" href="#">
                 Contact
-              </a>
+              </a> */}
+              
+              
             </li>
           </ul>
           {/* <div className="hamburger" onClick={() => setShowMenu(!showMenu)}>

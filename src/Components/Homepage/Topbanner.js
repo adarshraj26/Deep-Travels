@@ -3,6 +3,9 @@ import { useNavigate } from "react-router-dom";
 import Wizard from "./wizard";
 import BottomBanner from "./banner";
 import Testimonial from "./testimonial";
+import Footer from "./footer";
+// import Navbar2 from "./Navbar2";
+import Navbar from "./navbar";
 
 const TopBanner = () => {
     const navigate = useNavigate()
@@ -12,6 +15,7 @@ const TopBanner = () => {
 
     return (
         <>
+        <Navbar/>
             <section className="top-banner">
                 <div className="whole-banner">
                     <div className="banner-left">
@@ -71,6 +75,7 @@ const TopBanner = () => {
             <Wizard/>
             <BottomBanner/>
             <Testimonial/>
+            <Footer/>
         </>
     )
 }

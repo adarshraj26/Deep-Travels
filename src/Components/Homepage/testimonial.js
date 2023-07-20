@@ -25,7 +25,7 @@ const Testimonial = () => {
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item">
+                    <div class="carousel-item" style={{display:"flex"}}>
                         <div className="testimonial-profile">
                             <img src={require("../assets/Car-1.jpg")}/>
                         </div>
@@ -38,7 +38,7 @@ const Testimonial = () => {
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item">
+                    {/* <div class="carousel-item">
                         <div className="testimonial-profile">
                             <img src={require("../assets/Car-1.jpg")}/>
                         </div>
@@ -50,7 +50,7 @@ const Testimonial = () => {
                                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem debitis ipsa, nostrum dolorem laudantium sint ut vel maxime commodi non saepe ducimus ratione veritatis ea amet porro corrupti magni ab. Corporis id maxime, eligendi quaerat non cumque atque asperiores praesentium quam corrupti ipsa quis at aut, vel veritatis expedita ex, quia et. Quam dolor fugiat neque voluptatibus, tempora porro? Aut, suscipit earum, impedit optio inventore vitae facilis maxime quia temporibus voluptatibus veniam vel tempora dolores.</p>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
