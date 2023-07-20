@@ -506,7 +506,7 @@ footer {
   .title {
     width: 100%;
     display: block;
-    margin-bottom: 25px;
+    /* margin-bottom: 25px; */
   }
   .container-4{
     width: 100%;
@@ -708,8 +708,7 @@ footer {
 
 /*======= passenger details ======*/
 
-
- .passDetails {
+.passDetails {
   text-align: left;
   font: normal normal var(--fw-1) 45px/61px var(--ff-2);
   letter-spacing: 0px;
@@ -718,6 +717,13 @@ footer {
   margin-bottom: 10px;
   margin-left: 20px;
 }
+@media screen and (max-width: 500px) {
+  .passDetails {
+    width: 100%;
+    display: block;
+  }
+}
+
 .locate {
   width: 32vh;
   padding: 8px 20px;
@@ -822,7 +828,7 @@ footer {
 .card-2 {
   background: var(--vd-color);
   display: block;
-  
+
   width: 100%;
   height: auto;
 }
@@ -860,7 +866,7 @@ footer {
 @media screen and (max-width: 600px) {
   .card-group {
     width: 100%;
-    display:grid;
+    display: grid;
     margin-bottom: 25px;
   }
 }
@@ -888,10 +894,10 @@ footer {
   font-size: 21px;
   text-align: left;
 }
-.card-body-11 label{
-padding-bottom: 10px;
+.card-body-11 label {
+  padding-bottom: 10px;
 }
-.card-body-11 .form-control{
+.card-body-11 .form-control {
   padding-bottom: 10px;
 }
 
