@@ -672,9 +672,7 @@ footer {
   .card-body-7 {
     width: 100%;
     display: block;
-    /* padding: 10px; */
     margin-left: 20px;
-    /* margin-bottom: 20px; */
   }
 }
 @media screen and (max-width: 600px) {
@@ -682,8 +680,6 @@ footer {
     width: 100%;
     display: block;
     padding: 10px 0 20px 0;
-    /* margin-left: 30px; */
-    /* margin-bottom: 20px; */
     margin-left: 10px;
   }
 }
@@ -691,7 +687,6 @@ footer {
   display: grid;
   margin-left: 54px;
   margin-right: 10rem;
-  /* justify-content: center; */
 }
 @media screen and (max-width: 600px) {
   .card-body-8 {
@@ -699,7 +694,6 @@ footer {
     display: block;
     padding: 10px;
     margin-left: 20px;
-    /* margin-bottom: 22px; */
   }
 }
 @media screen and (max-width: 600px) {
@@ -707,7 +701,7 @@ footer {
     width: 100%;
     display: block;
     padding: 10px 0 20px 0;
-    margin-bottom: 22px;
+    /* margin-bottom: 22px; */
   }
 }
 .card-body-9 {
@@ -842,15 +836,17 @@ footer {
   margin-bottom: 0px;
 }
 
-/* passenger details */
-.container-1 .passDetails {
+/*======= passenger details ======*/
+
+
+ .passDetails {
   text-align: left;
   font: normal normal var(--fw-1) 45px/61px var(--ff-2);
   letter-spacing: 0px;
   color: var(--secondary-color);
   margin-top: 20px;
-  margin-bottom: 20px;
-  margin-right: 10px;
+  margin-bottom: 10px;
+  margin-left: 20px;
 }
 .locate {
   width: 32vh;
@@ -884,6 +880,7 @@ footer {
 }
 .react-tel-input {
   width: 80px;
+  padding-bottom: 4px;
 }
 .react-tel-input .form-control {
   width: 32vh !important;
@@ -941,10 +938,12 @@ footer {
 }
 .container-1 {
   padding: 35px;
+  width: 100%;
   /* height: auto; */
 }
 @media screen and (max-width: 600px) {
   .container-1 {
+    /* padding-right: 0; */
     width: 100%;
     display: block;
     margin-bottom: 25px;
@@ -953,8 +952,16 @@ footer {
 .card-2 {
   background: var(--vd-color);
   display: block;
-  max-width: 100%;
+  
+  width: 100%;
   height: auto;
+}
+@media screen and (max-width: 600px) {
+  .card-2 {
+    width: 100%;
+    display: block;
+    margin-left: auto;
+  }
 }
 .card-img-1 {
   position: relative;
@@ -983,9 +990,12 @@ footer {
 @media screen and (max-width: 600px) {
   .card-group {
     width: 100%;
-    display: block;
+    display:grid;
     margin-bottom: 25px;
   }
+}
+.react-tel-input .flag-dropdown {
+  margin-bottom: 5px;
 }
 
 .card-img-card-img-overlay {
@@ -1007,7 +1017,12 @@ footer {
   font-family: var(--ff-2);
   font-size: 21px;
   text-align: left;
-  padding: 10px;
+}
+.card-body-11 label{
+padding-bottom: 10px;
+}
+.card-body-11 .form-control{
+  padding-bottom: 10px;
 }
 
 .card-img-1 .btn-1 {
