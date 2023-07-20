@@ -6,7 +6,7 @@ const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
   return (
     <div>
-      <nav className="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+      <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <a className="navbar-brand" href="#"></a>
         <button
           className="navbar-toggler"
@@ -16,18 +16,15 @@ const Navbar = () => {
           aria-controls="navbarNavDropdown"
           aria-expanded="false"
           aria-label="Toggle navigation"
-          onClick={() => setNavbarOpen((prev) => !prev)}
+          // onClick={() => setNavbarOpen((prev) => !prev)}
         >
           <span className="navbar-toggler-icon"></span>
-          {navbarOpen ? "close" : "open"}
+          {/* {navbarOpen ? "close" : "open"} */}
         </button>
 
         <div className="collapse navbar-collapse" id="navbarNav" >
           <ul className={`navbar-nav ms-auto order-6${navbarOpen ? ' show-menu' : ''}`} >
             <li className="nav-item active">
-              {/* <a className="nav-link text-black" href="#" aria-current="page">
-                Home
-              </a> */}
               <Link to="/" className="nav-link text-black" aria-current="page">Home</Link>
             </li>
             <li className="nav-item">

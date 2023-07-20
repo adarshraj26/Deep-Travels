@@ -3,8 +3,9 @@ import { useNavigate } from "react-router-dom";
 import Wizard from "./wizard";
 import BottomBanner from "./banner";
 import Testimonial from "./testimonial";
-import Navbar from "./navbar";
 import Footer from "./footer";
+// import Navbar2 from "./Navbar2";
+import Navbar from "./navbar";
 
 const TopBanner = () => {
     const navigate = useNavigate()
