@@ -75,9 +75,9 @@
   top: 32px;
   justify-content: space-evenly;
 }
-.navbar-collapse {
-background-color:#707070;
-z-index: 999;
+
+.collapse .navbar-collapse{
+  background-color: white;
 }
 
 /* ========================= Footer ========================= */
@@ -1475,4 +1475,8 @@ footer {
   .navbar-div{
     width: 100%;
   }
+  .navbar-collapse  {
+    background-color:#707070;
+    z-index: 999;
+    }
 }
