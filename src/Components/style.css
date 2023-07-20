@@ -50,6 +50,7 @@
 .navbar {
   top: 0px;
   left: 0px;
+  right: 0px;
   height: 80px;
   background: 0% 0% no-repeat padding-box;
   box-shadow: var(--shadow);
@@ -522,54 +523,54 @@ footer {
   margin-left: 30px;
   margin-right: 30px;
 }
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
   .card-4 {
     display: block;
     margin-bottom: 25px;
   }
-}
+} */
 .card-body-7 {
   display: grid;
   margin-left: 10px;
   margin-right: 10rem;
   /* justify-content: center; */
 }
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
   .card-body-7 {
     width: 100%;
     display: block;
     margin-left: 20px;
   }
-}
-@media screen and (max-width: 600px) {
+} */
+/* @media screen and (max-width: 600px) {
   .card-body-7 .chargedetails {
     width: 100%;
     display: block;
     padding: 10px 0 20px 0;
     margin-left: 10px;
   }
-}
+} */
 .card-body-8 {
   display: grid;
   margin-left: 54px;
   margin-right: 10rem;
 }
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
   .card-body-8 {
     width: 100%;
     display: block;
     padding: 10px;
     margin-left: 20px;
   }
-}
-@media screen and (max-width: 600px) {
+} */
+/* @media screen and (max-width: 600px) {
   .card-body-8 .chargedetails {
     width: 100%;
     display: block;
     padding: 10px 0 20px 0;
-    /* margin-bottom: 22px; */
-  }
-}
+    margin-bottom: 22px;
+  } 
+} */
 .card-body-9 {
   padding-bottom: 40px;
   display: grid;
@@ -578,28 +579,28 @@ footer {
   margin-right: 15rem;
   /* justify-content: center; */
 }
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
   .card-body-9 {
     width: 100%;
     display: block;
     margin-left: 30px;
     padding-bottom: 27px;
-    /* margin-bottom: 22px; */
-  }
-}
+    margin-bottom: 22px;
+  } 
+} */
 .card-body-10 {
   padding-bottom: 40px;
   display: grid;
   margin-right: 10rem;
 }
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
   .card-body-10 {
     width: 100%;
     display: block;
     margin-left: 30px;
-    /* margin-bottom: 25px; */
+    margin-bottom: 25px;
   }
-}
+} */
 
 /* charges */
 .chargedetails {
@@ -617,37 +618,37 @@ footer {
   margin-left: 30px;
   margin-right: 30px;
 }
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
   .card-3 {
-    /* width: 100%; */
+    width: 100%;
     display: block;
     margin-bottom: 25px;
   }
-  /* .conatiner-3{
+  .conatiner-3{
     width: 85%;
-  } */
-}
+  }
+} */
 .card-body-3 {
   display: grid;
   margin-left: 10px;
   margin-right: 10rem;
   /* justify-content: center; */
 }
-@media screen and (max-width: 500px) {
+/* @media screen and (max-width: 500px) {
   .card-body-3 {
     width: 100%;
     margin-left: 30px;
   }
-}
+} */
 
-@media screen and (max-width: 500px) {
+/* @media screen and (max-width: 500px) {
   .card-body-3 .chargedetails {
     width: 100%;
     display: block;
     padding: 10px 0 20px 0;
     margin-bottom: 22px;
   }
-}
+} */
 
 .card-body-4 {
   padding-bottom: 40px;
@@ -655,15 +656,15 @@ footer {
   /* margin-left: auto; */
   margin-right: 10rem;
 }
-@media screen and (max-width: 500px) {
-  .card-body-4 {
+/* @media screen and (max-width: 500px) {
+   .card-body-4 {
     width: 100%;
-    /* display: block; */
-    /* margin-bottom: 22px; */
-    /* padding-left: 35px; */
+    display: block;
+    margin-bottom: 22px;
+    padding-left: 35px;
     margin-left: 30px;
   }
-}
+} */
 .card-body-5 {
   padding-bottom: 40px;
   display: grid;
@@ -671,26 +672,26 @@ footer {
   margin-left: 50px;
   margin-right: 15rem;
 }
-@media screen and (max-width: 500px) {
+/* @media screen and (max-width: 500px) {
   .card-body-5 {
     width: 100%;
     padding-left: 0;
     margin-left: 30px;
   }
-}
+} */
 .card-body-6 {
   padding-bottom: 40px;
   display: grid;
   margin-right: 2rem;
 }
-@media screen and (max-width: 500px) {
+/* @media screen and (max-width: 500px) {
   .card-body-6 {
     width: 100%;
-    /* display: block; */
+    display: block;
     margin-left: 30px;
-    /* margin-bottom: 22px; */
-  }
-}
+    margin-bottom: 22px;
+  } 
+} */
 .heading {
   top: 1042px;
   left: 100px;
@@ -717,12 +718,12 @@ footer {
   margin-bottom: 10px;
   margin-left: 20px;
 }
-@media screen and (max-width: 500px) {
+/* @media screen and (max-width: 500px) {
   .passDetails {
     width: 100%;
     display: block;
   }
-}
+} */
 
 .locate {
   width: 32vh;
@@ -777,54 +778,54 @@ footer {
 #phone:focus:invalid {
   border-color: red;
 }
-@media screen and (min-width: 500px) {
+/* @media screen and (min-width: 500px) {
   .card-2 input[type="text"] {
     max-width: 100%;
     display: block;
-    /* margin-bottom: 25px; */
+    margin-bottom: 25px;
   }
-}
-@media screen and (min-width: 500px) {
+} */
+/* @media screen and (min-width: 500px) {
   .card-2 input[type="date"] {
     max-width: 100%;
     display: block;
-    /* margin-bottom: 25px; */
-  }
-}
-@media screen and (min-width: 500px) {
+    margin-bottom: 25px;
+  } 
+} */
+/* @media screen and (min-width: 500px) {
   .card-2 input[type="time"] {
     max-width: 100%;
     display: block;
-    /* margin-bottom: 25px; */
+    margin-bottom: 25px;
   }
-}
-@media screen and (min-width: 500px) {
+} */
+/* @media screen and (min-width: 500px) {
   .card-2 .react-tel-input .form-control {
     max-width: 100%;
     display: block;
-    /* margin-bottom: 25px; */
-  }
-}
-@media screen and (min-width: 500px) {
+    margin-bottom: 25px;
+  } 
+} */
+/* @media screen and (min-width: 500px) {
   .locate {
     max-width: 100%;
     display: block;
     margin-bottom: 25px;
   }
-}
+} */
 .container-1 {
   padding: 35px;
   width: 100%;
   /* height: auto; */
 }
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
   .container-1 {
-    /* padding-right: 0; */
+    padding-right: 0;
     width: 100%;
     display: block;
     margin-bottom: 25px;
   }
-}
+} */
 .card-2 {
   background: var(--vd-color);
   display: block;
@@ -832,13 +833,13 @@ footer {
   width: 100%;
   height: auto;
 }
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
   .card-2 {
     width: 100%;
     display: block;
     margin-left: auto;
   }
-}
+} */
 .card-img-1 {
   position: relative;
   padding-bottom: 30px;
@@ -848,14 +849,14 @@ footer {
   box-sizing: border-box;
   align-items: center;
 }
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
   .card-text-1 {
     width: 100%;
     display: flex;
     justify-content: center;
     margin-bottom: 25px;
   }
-}
+} */
 .card-group {
   display: block;
   justify-content: space-around;
@@ -863,13 +864,13 @@ footer {
   padding-left: 20px;
   /* height:350px; */
 }
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
   .card-group {
     width: 100%;
     display: grid;
     margin-bottom: 25px;
   }
-}
+} */
 .react-tel-input .flag-dropdown {
   margin-bottom: 5px;
 }
@@ -880,13 +881,13 @@ footer {
   background-color: var(--vd-color);
   max-width: 20%;
 }
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
   .card-img-card-img-overlay {
     width: 100%;
     display: block;
-    /* margin-bottom: 25px; */
+    margin-bottom: 25px;
   }
-}
+} */
 
 .card-group label {
   font-weight: bolder;
@@ -920,13 +921,13 @@ footer {
   align-items: center;
   padding-left: 65vh;
 }
-@media screen and (max-width: 600px) {
+/* @media only screen and (max-width: 600px) {
   .button {
     width: 60%;
     display: block;
     margin-bottom: 25px;
   }
-}
+} */
 
 
 /* ======================= Destination Form ======================== */
@@ -1209,11 +1210,11 @@ footer {
 }
 
 /* For Mobile Phones Portrait or Landscape View */
-@media only screen and (min-width: 240px)and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
   /* ======================= HOMEPAGE ========================== */
-  /* body{
+  body{
     overflow-x: hidden;
-  } */
+  }
 
   .top-banner {
     position: relative;
@@ -1466,4 +1467,187 @@ footer {
   .navbar-div{
     width: 100%;
   }
+  
+  
+  /* ===================== VEHICLE DETAILS ==================== */
+  
+  .title {
+    /* width: 100%; */
+    display: block;
+    font-size: 35px;
+    /* margin-bottom: 25px; */
+  }
+  .heading{
+    font-size: 35px;
+  }
+  .passDetails{
+    font-size: 35px;
+  }
+  /* .container-4{
+    width: 100%;
+  } */
+
+  .card-4 {
+    display: block;
+    margin-bottom: 25px;
+  }
+.card-body-7 {
+    width: 60%;
+    display: block;
+    margin-left: 20px;
+  }
+.card-body-7 .chargedetails {
+    /* width: 100%; */
+    display: block;
+    padding: 10px 0 20px 0;
+    margin-left: 10px;
+    font-size: 16px;
+  }
+.card-body-8 {
+    width: 60%;
+    display: block;
+    padding: 10px;
+    margin-left: 20px;
+  }
+.card-body-8 .chargedetails {
+    /* width: 100%; */
+    display: block;
+    padding: 10px 0 20px 0;
+    /* margin-bottom: 22px; */
+    font-size: 16px;
+  }
+.card-body-9 {
+    width: 60%;
+    display: block;
+    margin-left: 30px;
+    padding-bottom: 27px;
+    /* margin-bottom: 22px; */
+  }
+.card-body-9 .chargedetails{
+  font-size: 16px;
+}  
+.card-body-10 {
+    width: 60%;
+    display: block;
+    margin-left: 30px;
+    /* margin-bottom: 25px; */
+  }
+.card-body-10 .chargedetails{
+  font-size: 16px;
+}
+.card-3 {
+    /* width: 100%; */
+    display: block;
+    margin-bottom: 25px;
+  }
+  /* .conatiner-3{
+    width: 85%;
+  } */
+.card-body-3 {
+    /* width: 100%; */
+    width: 70%;
+    margin-left: 30px;
+  }
+.card-body-3 .chargedetails {
+    /* width: 100%; */
+    display: block;
+    padding: 10px 0 20px 0;
+    margin-bottom: 22px;
+    font-size: 16px;
+  }
+.card-body-4 {
+  width: 60%;
+    /* width: 100%; */
+    /* display: block; */
+    /* margin-bottom: 22px; */
+    /* padding-left: 35px; */
+    margin-left: 30px;
+  }
+  .card-body-4 .chargedetails{
+    font-size: 16px;
+  }
+.card-body-5 {
+  width: 60%;
+    /* width: 100%; */
+    padding-left: 0;
+    margin-left: 30px;
+  }
+  .card-body-5 .chargedetails{
+    font-size: 16px;
+  }
+.card-body-6 {
+  width: 70%;
+    /* width: 100%; */
+    /* display: block; */
+    margin-left: 30px;
+    /* margin-bottom: 22px; */
+  }
+  .card-body-6 .chargedetails{
+    font-size: 16px;
+  }
+.passDetails {
+    /* width: 100%; */
+    display: block;
+  }
+.card-2 input[type="text"] {
+    display: block;
+    /* margin-bottom: 25px; */
+  }
+.card-2 input[type="date"] {
+    display: block;
+    /* margin-bottom: 25px; */
+  }
+.card-2 input[type="time"] {
+    display: block;
+    /* margin-bottom: 25px; */
+  }
+.card-2 .react-tel-input .form-control {
+    display: block;
+    /* margin-bottom: 25px; */
+  }
+.locate {
+    display: block;
+    margin-bottom: 25px;
+  }
+.container-1 {
+    /* padding-right: 0; */
+    /* width: 100%; */
+    display: block;
+    margin-bottom: 25px;
+  }
+.card-2 {
+    /* width: 100%; */
+    display: block;
+    margin-left: auto;
+  }
+.card-text-1 {
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+  }
+.card-group {
+    /* width: 100%; */
+    display: block;
+    margin-bottom: 25px;
+  }
+  .card-group label{
+    font-size: 16px;
+    width: 60%;
+  }
+.card-img-card-img-overlay {
+    /* width: 100%; */
+    display: block;
+    height: 305px;
+    padding-bottom: 0;
+    /* margin-bottom: 25px; */
+  }
+
+.button {
+    width: 60%;
+    display: block;
+    margin-bottom: 25px;
+  }
+
+
 }
