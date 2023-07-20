@@ -42,7 +42,7 @@
 
 /* ============================ Navbar ============================= */
 
-#navbarNav {
+#navbarNavDropdown {
   font: normal normal var(--fw-2) 20px/25px var(--ff-1);
   letter-spacing: 0px;
 }
@@ -74,6 +74,10 @@
 .nav-link {
   top: 32px;
   justify-content: space-evenly;
+}
+.navbar-collapse {
+background-color:#707070;
+z-index: 999;
 }
 
 /* ========================= Footer ========================= */
@@ -512,6 +516,11 @@ footer {
     width: 100%;
   }
 }
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .container-4{
+    width: 100%;
+  }
+ }
 .card-4 {
   background-color: var(--vd-color);
   width: auto;
