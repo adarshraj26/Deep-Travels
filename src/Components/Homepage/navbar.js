@@ -22,8 +22,8 @@ const Navbar = () => {
           {/* {navbarOpen ? "close" : "open"} */}
         </button>
 
-        <div className="collapse navbar-collapse" id="navbarNav" >
-          <ul className={`navbar-nav ms-auto order-6${navbarOpen ? ' show-menu' : ''}`} >
+        <div className="collapse navbar-collapse " id="navbarNavDropdown" >
+          <ul className= "navbar-nav ms-auto order-6 ">
             <li className="nav-item active">
               <Link to="/" className="nav-link text-black" aria-current="page">Home</Link>
             </li>

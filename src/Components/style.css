@@ -42,7 +42,7 @@
 
 /* ============================ Navbar ============================= */
 
-#navbarNav {
+#navbarNavDropdown {
   font: normal normal var(--fw-2) 20px/25px var(--ff-1);
   letter-spacing: 0px;
 }
@@ -75,6 +75,10 @@
 .nav-link {
   top: 32px;
   justify-content: space-evenly;
+}
+
+.collapse .navbar-collapse{
+  background-color: white;
 }
 
 /* ========================= Footer ========================= */
@@ -176,6 +180,7 @@ footer {
   display: flex;
   float: left;
   width: 35%;
+  padding: 0;
 }
 
 .card-header {
@@ -339,11 +344,14 @@ footer {
   background: var(--light-grey);
 }
 
+.testimonial-profile{
+  text-align: center;
+}
+
 .testimonial-profile img {
   width: 139px;
   border-radius: 50%;
   height: 136px;
-  margin-left: -21px;
 }
 
 .testimonial-text {
@@ -354,7 +362,8 @@ footer {
   color: var(--secondary-color);
 }
 
-.testimoial-name {
+.testimoial-name p{
+  text-align: center;
   font-weight: bolder;
   font-family: var(--ff-3);
 }
@@ -394,6 +403,14 @@ footer {
   border: 0;
   opacity: 0.5;
   transition: opacity 0.15s ease;
+}
+
+.carousel-control-next-icon {
+  background-image: url("./assets/right-nav.svg") !important; 
+}
+
+.carousel-control-prev-icon {
+  background-image: url("./assets/left-nav.svg") !important; 
 }
 
 
@@ -513,6 +530,11 @@ footer {
     width: 100%;
   }
 }
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .container-4{
+    width: 100%;
+  }
+ }
 .card-4 {
   background-color: var(--vd-color);
   width: auto;
@@ -1467,25 +1489,12 @@ footer {
   .navbar-div{
     width: 100%;
   }
-  
-  
-  /* ===================== VEHICLE DETAILS ==================== */
-  
-  .title {
-    /* width: 100%; */
-    display: block;
-    font-size: 35px;
-    /* margin-bottom: 25px; */
+
+  .navbar-collapse{
+    background: #707070;
+    z-index: 999;
   }
-  .heading{
-    font-size: 35px;
-  }
-  .passDetails{
-    font-size: 35px;
-  }
-  /* .container-4{
-    width: 100%;
-  } */
+
 
   .card-4 {
     display: block;
@@ -1638,7 +1647,7 @@ footer {
 .card-img-card-img-overlay {
     /* width: 100%; */
     display: block;
-    height: 305px;
+    height: 333px;
     padding-bottom: 0;
     /* margin-bottom: 25px; */
   }
