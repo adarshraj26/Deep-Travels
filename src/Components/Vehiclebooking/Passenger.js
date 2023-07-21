@@ -11,6 +11,7 @@ const Passenger = () => {
 
   return (
     <>
+    <section className="section-passenger-details">
       <h2 className="passDetails">Passenger Details</h2>
       <div className="container-1">
         <div className="card-2">
@@ -46,7 +47,7 @@ const Passenger = () => {
                   id="inputEmail"
                   placeholder="Enter Email"
                 />
-                <label for="inputTime col-sm-4">Pickup Time</label>
+                <label for="inputTime col-sm-4" placeholder="Pickup Time">Pickup Time</label>
                 <input type="time" class="form-control" id="inputTime" />
                 <label for="inputAddress2 col-sm-4">Destination Location</label>
                 {/* <input type="text" class="form-control" id="inputAddress2" /> */}
@@ -76,7 +77,7 @@ const Passenger = () => {
                 />
 
                 <label for="inputDestination col-sm-6" style={{paddingBottom:'2px'}}>Pickup Address</label>
-                <input type="text" class="form-control" id="inputDestination" />
+                <input type="text" class="form-control" id="inputDestination" placeholder="Pickup Address" />
               </div>
             </div>
           </div>
@@ -87,6 +88,7 @@ const Passenger = () => {
           </div>
         </div>
       </div>
+      </section>
     </>
   );
 };
