@@ -5,6 +5,7 @@ import "@fontsource/open-sans";
 const Charges = () => {
   return (
     <>
+    <section className="section-charges-details">
       <h2 className="heading">Charges</h2>
       <div className="container-3">
         <div className="card-3">
@@ -35,6 +36,7 @@ const Charges = () => {
           </div>
         </div>
       </div>
+      </section>
     </>
   );
 };

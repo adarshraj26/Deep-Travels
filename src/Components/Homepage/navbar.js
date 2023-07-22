@@ -6,7 +6,7 @@ const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
   return (
     <div className="navbar-div">
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <nav className="navbar fixed-top navbar-expand-lg navbar-light bg-light">
         <a className="navbar-brand" href="#"></a>
         <button
           className="navbar-toggler"
