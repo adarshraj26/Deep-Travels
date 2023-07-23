@@ -524,11 +524,7 @@ footer {
     width: 100%;
   }
 }
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  .container-4{
-    width: 100%;
-  }
- }
+
 .card-4 {
   background-color: var(--vd-color);
   width: auto;
@@ -621,8 +617,8 @@ footer {
   font: normal normal var(--fw-1) 45px/61px var(--ff-2);
   letter-spacing: 0px;
   color: var(--secondary-color);
-  margin-top: 20px;
-  margin-bottom: 10px;
+  margin-top: 27px;
+  margin-bottom: -7px;
   margin-left: 20px;
 }
 
@@ -1418,4 +1414,149 @@ footer {
     margin-left: 25px;
   }
 
+}
+/* tab view */
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .title, .heading
+  {
+    width:100%;
+    display: block;
+  }
+  .section-vehicle-details{
+    width: 96%;
+    display: block;
+    /* padding-right: 30px; */
+  }
+  .container-4{
+    width: 100%;
+    display: block;
+    }
+  .card-4{
+    width: 100%;
+    display: block;
+  }
+  .card-body-7{
+    width: 100%;
+    display: block;
+    padding-bottom: 5px;
+  }
+  .card-body-7 .chargedetails{
+    padding-bottom: 0;
+  }
+  .card-body-8{
+    width: 100%;
+    display: block;
+    margin-left: 10px;
+    padding-bottom: 5px;
+  }
+  .card-body-8 .chargedetails{
+    padding-bottom:5px;
+  }
+  .card-body-9{
+    width: 100%;
+    display: block;
+    margin-left: 10px;
+    padding-bottom:10px ;
+  }
+  .card-body-10{
+    width: 100%;
+    display: block;
+    padding-top:0;
+    margin-left: 10px;
+    padding-bottom: 10px;
+    
+  }
+  .section-charges-details{
+    width: 96%;
+    display: block;
+    /* padding-right: 30px; */
+  }
+  .container-3{
+    width: 100%;
+    display: block;
+    /* margin-right: 10px; */
+  }
+  .card-3{
+    width: 100%;
+    display: block;
+    margin-right: 10px;
+  }
+  .card-body-3{
+    width: 100%;
+    display: block;
+  }
+  .card-body-3 .chargedetails{
+    padding-bottom: 5px;
+  }
+  .card-body-5.chargedetails{
+    padding-bottom: 10px;
+  }
+  .card-body-4{
+    width: 100%;
+    display: block;
+    margin-left: 10px;
+    padding-bottom: 0;
+  }
+  .card-body-5{
+    width: 100%;
+    display: block;
+    margin-left: 10px;
+    padding-bottom: 5px;
+  }
+  .card-body-6{
+    width: 100%;
+    display: block;
+    margin-left: 10px;
+    padding-bottom: 5px;
+  }
+  .section-passenger-details{
+    width: 96%;
+    margin-right: 20px;
+  }
+  .passDetails{
+    width: 100%;
+  }
+  .container-1{
+    width: 100%;
+    /* display: grid;
+    justify-content: center; */
+  }
+  .card-2{
+    width: 100%;
+    display: block;
+    padding-left: 20%;
+    
+  }
+  .card-group{
+    width: 100%;
+    display: block;
+    
+  }
+  .card-group label{
+    width: 100%;
+
+  }
+  .card-img-card-img-overlay{
+    width: 100%;
+    padding-bottom: 0;
+  }
+  .card-body-1{
+    width: 100%;
+    /* margin-bottom: 10px; */
+  }
+  .card-body-2{
+    width: 100%;
+  }
+  .card-body-11{
+    width: 100%;
+  }
+  .card-img-1{
+    width: 100%;
+    display: block;
+    padding-left: 14%;
+  }
+  .button{
+    width: 60%;
+    display: block;
+  }
 }
