@@ -20,12 +20,12 @@ const Contactform = () => {
                 </div>
                 <div className="contact-form">
                     <h1>Contact Us</h1>
-                    <form>
+                    {/* <form>
                         <input type="text" placeholder="Name" className="contact-form-text" />
                         <input type="email" placeholder="Email" className="contact-form-text" />
                         <textarea placeholder="Message" className="contact-form-textarea"></textarea>
                         <input type="submit" name="Submit" className="contact-form-btn" />
-                    </form>
+                    </form> */}
                 </div>
             </div>
             <Footer/>

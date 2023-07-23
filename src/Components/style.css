@@ -926,7 +926,7 @@ footer {
 .contact-in {
   width: 80%;
   height: auto;
-  margin: auto;
+  margin:217px auto;
   display: flex;
   flex-wrap: wrap;
   padding: 10px;
