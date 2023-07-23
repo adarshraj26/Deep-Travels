@@ -162,7 +162,7 @@ footer {
 /* ============================ Cards Page =========================== */
 
 .section-card {
-  margin-top: 69px;
+  margin-top: 5px;
     margin-bottom: 50px;
 }
 
@@ -193,9 +193,11 @@ footer {
 
 .card-header h1 {
   font-family: var(--ff-2);
-  font-weight: var(--fw-1);
-  font-size: 35px;
-  padding-top: 30px;
+    font-weight: var(--fw-1);
+    font-size: 35px;
+    /* padding-top: 30px; */
+    margin-top: 56px;
+    margin-left: -58px;
 }
 
 .card-body {
@@ -524,11 +526,7 @@ footer {
     width: 100%;
   }
 }
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  .container-4{
-    width: 100%;
-  }
- }
+
 .card-4 {
   background-color: var(--vd-color);
   width: auto;
@@ -621,8 +619,8 @@ footer {
   font: normal normal var(--fw-1) 45px/61px var(--ff-2);
   letter-spacing: 0px;
   color: var(--secondary-color);
-  margin-top: 20px;
-  margin-bottom: 10px;
+  margin-top: 27px;
+  margin-bottom: -7px;
   margin-left: 20px;
 }
 
@@ -925,7 +923,7 @@ footer {
 
 .contact-in {
   width: 80%;
-  height: auto;
+  height: 350px;
   margin:217px auto;
   display: flex;
   flex-wrap: wrap;
@@ -1014,6 +1012,147 @@ footer {
 
 /* For Tablet View */
 @media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+/* ====================== TOP-BANNER ======================== */
+
+.top-banner {
+  height: 649px;
+}
+
+.banner-left .banner-text {
+  margin-top: 150px;
+}
+
+.banner-header {
+  width: 40%;
+}
+
+  .banner-header h1 {
+    margin-left: 62px;
+    width: 60%;
+}
+
+.banner-body {
+  width: 40%;
+}
+
+.banner-body p {
+  margin-left: 60px;
+}
+
+.banner-right {
+  height: 639px;
+}
+
+.color-banner {
+  height: 285px;
+  width: 95%;
+}
+
+.top-banner .banner-img {
+  height: 276px;
+  width: 90%;
+  margin-top: 220px;
+}
+
+.search-car {
+  height: 18vh;
+  width: 80%;
+}
+
+.search .inputBox {
+  width: 9rem;
+}
+
+.search-car .btn {
+  padding-top: 9px;
+}
+
+.search-car .search-btn {
+  height: 5vh;
+}
+
+/* =================== RENT FLOW ==================== */
+
+.flow {
+  height: 1100px;
+}
+
+.flow-container .step {
+  width: 100%;
+}
+
+.flow-container .circle {
+  height: 37px;
+  width: 5%;
+}
+
+.flow-container .small-circle {
+  height: 18px;
+  width: 51%;
+  top: 6px;
+}
+
+.flow-container .flow-content {
+  width: 45%;
+  margin: 32px auto;
+  margin-top: 10px;
+}
+
+.flow-container .step::after {
+  display: none;
+}
+
+/* ================== BOTTOM BANNER =================== */
+
+.banner-text {
+  margin-top: 90px;
+  margin-bottom: 77px;
+}
+
+.small-text {
+  font-size: 2vw;
+  margin-right: 100px;
+}
+
+.big-text {
+  font-size: 4vw;
+  margin-left: 53%;
+}
+
+ /* =================== TESTIMONIALS ================== */
+
+ .section-testimonial {
+  height: 903px;
+}
+
+.carousel-inner .active {
+  margin: 20px 100px;
+}
+
+.testimonial-text {
+  margin-left: 6px;
+}
+
+ /* ==================== CARDS ================== */
+
+ .main-card {
+  display: block;
+}
+
+.card-header h1 {
+  margin-top: 48px;
+  font-size: 41px;
+}
+
+.section-card {
+  margin-top: 23px;
+  display: flex;
+}
+
+.main-card .card {
+  margin: 25px;
+}
+
 }
 
 /* For Mobile Phones Portrait or Landscape View */
@@ -1183,6 +1322,7 @@ footer {
   /* ======================== CARBOOK PAGE ======================== */
 
   .section-card {
+    margin-top: 30px;
     margin-bottom: 50px;
   }
 
@@ -1196,6 +1336,7 @@ footer {
 
   .card-header h1 {
     font-size: 20px;
+    margin-top: 96px;
   }
 
   .main-card {
@@ -1418,4 +1559,154 @@ footer {
     margin-left: 25px;
   }
 
+}
+/* tab view */
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .navbar-collapse{
+    background: #707070;
+    z-index: 999;
+  }
+
+  .title, .heading
+  {
+    width:100%;
+    display: block;
+  }
+  .section-vehicle-details{
+    width: 96%;
+    display: block;
+    /* padding-right: 30px; */
+  }
+  .container-4{
+    width: 100%;
+    display: block;
+    }
+  .card-4{
+    width: 100%;
+    display: block;
+  }
+  .card-body-7{
+    width: 100%;
+    display: block;
+    padding-bottom: 5px;
+  }
+  .card-body-7 .chargedetails{
+    padding-bottom: 0;
+  }
+  .card-body-8{
+    width: 100%;
+    display: block;
+    margin-left: 10px;
+    padding-bottom: 5px;
+  }
+  .card-body-8 .chargedetails{
+    padding-bottom:5px;
+  }
+  .card-body-9{
+    width: 100%;
+    display: block;
+    margin-left: 10px;
+    padding-bottom:10px ;
+  }
+  .card-body-10{
+    width: 100%;
+    display: block;
+    padding-top:0;
+    margin-left: 10px;
+    padding-bottom: 10px;
+    
+  }
+  .section-charges-details{
+    width: 96%;
+    display: block;
+    /* padding-right: 30px; */
+  }
+  .container-3{
+    width: 100%;
+    display: block;
+    /* margin-right: 10px; */
+  }
+  .card-3{
+    width: 100%;
+    display: block;
+    margin-right: 10px;
+  }
+  .card-body-3{
+    width: 100%;
+    display: block;
+  }
+  .card-body-3 .chargedetails{
+    padding-bottom: 5px;
+  }
+  .card-body-5.chargedetails{
+    padding-bottom: 10px;
+  }
+  .card-body-4{
+    width: 100%;
+    display: block;
+    margin-left: 10px;
+    padding-bottom: 0;
+  }
+  .card-body-5{
+    width: 100%;
+    display: block;
+    margin-left: 10px;
+    padding-bottom: 5px;
+  }
+  .card-body-6{
+    width: 100%;
+    display: block;
+    margin-left: 10px;
+    padding-bottom: 5px;
+  }
+  .section-passenger-details{
+    width: 96%;
+    margin-right: 20px;
+  }
+  .passDetails{
+    width: 100%;
+  }
+  .container-1{
+    width: 100%;
+    /* display: grid;
+    justify-content: center; */
+  }
+  .card-2{
+    width: 100%;
+    display: block;
+    padding-left: 20%;
+    
+  }
+  .card-group{
+    width: 100%;
+    display: block;
+    
+  }
+  .card-group label{
+    width: 100%;
+
+  }
+  .card-img-card-img-overlay{
+    width: 100%;
+    padding-bottom: 0;
+  }
+  .card-body-1{
+    width: 100%;
+    /* margin-bottom: 10px; */
+  }
+  .card-body-2{
+    width: 100%;
+  }
+  .card-body-11{
+    width: 100%;
+  }
+  .card-img-1{
+    width: 100%;
+    display: block;
+    padding-left: 14%;
+  }
+  .button{
+    width: 60%;
+    display: block;
+  }
 }

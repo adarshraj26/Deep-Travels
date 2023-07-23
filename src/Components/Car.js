@@ -7,10 +7,10 @@ const Carbook = () => {
     return (
         <>
         <Navbar/>
-            <section className='section-card'>
                 <div className='card-header'>
                     <h1 class="text-start">Cabs from Jamshedpur to Ranchi</h1>
                 </div>
+            <section className='section-card'>
                 <div className='main-card row-md-4'>
                     <div class="card col-sm-12" style={{ width: "22rem" }}>
                         <img src={require("./assets/Car-4.jpg")} class="card-img-top" alt="Maruti Suzuki Dezire" />
