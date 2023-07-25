@@ -1004,6 +1004,16 @@ footer {
   font-size: 15px;
 }
 
+.contact-details{
+  margin-top: 15px;
+}
+
+.contact-details p{
+  align-items: center;
+  font-family: var(--ff-3);
+  font-weight: 500;
+}
+
 /* ==========================MEDIA QUERIES========================= */
 
 /* For Desktop View */
