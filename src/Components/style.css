@@ -1065,8 +1065,8 @@ footer {
 }
 
 .search-car {
-  height: 18vh;
-  width: 80%;
+  height: 17svh;
+  width: 70%;
 }
 
 .search .inputBox {
@@ -1079,6 +1079,7 @@ footer {
 
 .search-car .search-btn {
   height: 5vh;
+  font-size: 25px;
 }
 
 /* =================== RENT FLOW ==================== */
