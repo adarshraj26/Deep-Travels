@@ -162,7 +162,7 @@ footer {
 /* ============================ Cards Page =========================== */
 
 .section-card {
-  margin-top: 69px;
+  margin-top: 5px;
     margin-bottom: 50px;
 }
 
@@ -193,9 +193,11 @@ footer {
 
 .card-header h1 {
   font-family: var(--ff-2);
-  font-weight: var(--fw-1);
-  font-size: 35px;
-  padding-top: 30px;
+    font-weight: var(--fw-1);
+    font-size: 35px;
+    /* padding-top: 30px; */
+    margin-top: 56px;
+    margin-left: -58px;
 }
 
 .card-body {
@@ -921,8 +923,8 @@ footer {
 
 .contact-in {
   width: 80%;
-  height: auto;
-  margin: auto;
+  height: 350px;
+  margin:217px auto;
   display: flex;
   flex-wrap: wrap;
   padding: 10px;
@@ -1002,6 +1004,16 @@ footer {
   font-size: 15px;
 }
 
+.contact-details{
+  margin-top: 15px;
+}
+
+.contact-details p{
+  align-items: center;
+  font-family: var(--ff-3);
+  font-weight: 500;
+}
+
 /* ==========================MEDIA QUERIES========================= */
 
 /* For Desktop View */
@@ -1010,6 +1022,148 @@ footer {
 
 /* For Tablet View */
 @media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+/* ====================== TOP-BANNER ======================== */
+
+.top-banner {
+  height: 649px;
+}
+
+.banner-left .banner-text {
+  margin-top: 150px;
+}
+
+.banner-header {
+  width: 40%;
+}
+
+  .banner-header h1 {
+    margin-left: 62px;
+    width: 60%;
+}
+
+.banner-body {
+  width: 40%;
+}
+
+.banner-body p {
+  margin-left: 60px;
+}
+
+.banner-right {
+  height: 639px;
+}
+
+.color-banner {
+  height: 285px;
+  width: 95%;
+}
+
+.top-banner .banner-img {
+  height: 276px;
+  width: 90%;
+  margin-top: 220px;
+}
+
+.search-car {
+  height: 17svh;
+  width: 70%;
+}
+
+.search .inputBox {
+  width: 9rem;
+}
+
+.search-car .btn {
+  padding-top: 9px;
+}
+
+.search-car .search-btn {
+  height: 5vh;
+  font-size: 25px;
+}
+
+/* =================== RENT FLOW ==================== */
+
+.flow {
+  height: 1100px;
+}
+
+.flow-container .step {
+  width: 100%;
+}
+
+.flow-container .circle {
+  height: 37px;
+  width: 5%;
+}
+
+.flow-container .small-circle {
+  height: 18px;
+  width: 51%;
+  top: 6px;
+}
+
+.flow-container .flow-content {
+  width: 45%;
+  margin: 32px auto;
+  margin-top: 10px;
+}
+
+.flow-container .step::after {
+  display: none;
+}
+
+/* ================== BOTTOM BANNER =================== */
+
+.banner-text {
+  margin-top: 90px;
+  margin-bottom: 77px;
+}
+
+.small-text {
+  font-size: 2vw;
+  margin-right: 100px;
+}
+
+.big-text {
+  font-size: 4vw;
+  margin-left: 53%;
+}
+
+ /* =================== TESTIMONIALS ================== */
+
+ .section-testimonial {
+  height: 903px;
+}
+
+.carousel-inner .active {
+  margin: 20px 100px;
+}
+
+.testimonial-text {
+  margin-left: 6px;
+}
+
+ /* ==================== CARDS ================== */
+
+ .main-card {
+  display: block;
+}
+
+.card-header h1 {
+  margin-top: 48px;
+  font-size: 41px;
+}
+
+.section-card {
+  margin-top: 23px;
+  display: flex;
+}
+
+.main-card .card {
+  margin: 25px;
+}
+
 }
 
 /* For Mobile Phones Portrait or Landscape View */
@@ -1179,6 +1333,7 @@ footer {
   /* ======================== CARBOOK PAGE ======================== */
 
   .section-card {
+    margin-top: 30px;
     margin-bottom: 50px;
   }
 
@@ -1192,6 +1347,7 @@ footer {
 
   .card-header h1 {
     font-size: 20px;
+    margin-top: 96px;
   }
 
   .main-card {
@@ -1417,6 +1573,11 @@ footer {
 }
 /* tab view */
 @media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .navbar-collapse{
+    background: #707070;
+    z-index: 999;
+  }
+
   .title, .heading
   {
     width:100%;

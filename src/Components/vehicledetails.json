@@ -1,0 +1,11 @@
+[
+  {
+    "car": "Dezire",
+    "source": "Jamshedpur",
+    "destination": "Ranchi",
+    "seat": "4",
+    "type": "one way",
+    "speedlimit": "60kmph",
+    "images": "./assets/Car-4.jpg"
+  }
+]
