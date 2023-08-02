@@ -1,0 +1,19 @@
+
+  [{
+    "car": "Dezire",
+    "source": "Jamshedpur",
+    "destination": "Ranchi",
+    "seat": "4",
+    "type": "one way",
+    "speedlimit": "60kmph"
+    
+  },
+  {
+   "one_way_rate":"₹2000",
+   "gst":"₹100",
+   "other_charges":"₹0",
+   "total_amount":"₹2100",
+   "parking_rate":"₹0"
+  }
+
+]

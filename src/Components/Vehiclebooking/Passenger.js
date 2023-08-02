@@ -14,7 +14,6 @@ const Passenger = () => {
   const handleChange = (value) => {
     setPhoneNumber(value);
   };
-  
 
   return (
     <>
