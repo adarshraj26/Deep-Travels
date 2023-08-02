@@ -4,6 +4,13 @@ import "react-phone-input-2/lib/style.css";
 const Passenger = () => {
   const [phoneNumber, setPhoneNumber] = useState("");
   const [valid, setValid] = useState(true);
+  const [name,setName] = useState("");
+  const [journeyDate,setJourneydate] = useState("");
+  const [sourceLocation,setSourcelocation] = useState("");
+  const [email,setEmail] = useState("");
+  const [pickupTime,setPickuptime] = useState("");
+  const [destinationLocation,setDestinationlocation] = useState("");
+  const [pickupAddress,setPickupaddress] = useState("");
   const handleChange = (value) => {
     setPhoneNumber(value);
   };

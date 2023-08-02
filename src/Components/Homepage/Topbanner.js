@@ -1,14 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Wizard from "./wizard";
 import BottomBanner from "./banner";
 import Testimonial from "./testimonial";
 import Footer from "./footer";
-// import Navbar2 from "./Navbar2";
 import Navbar from "./navbar";
 
 const TopBanner = () => {
     const navigate = useNavigate()
+    const [source,setSource] = useState("");
+    const [destination,setDestination] = useState("");
+    const [journeyDate,setJourneyDate] = useState("");
+    const [pickupTime,setPickupTime] = useState("");
     function goToAbout(){
         navigate("/Car")
     }
