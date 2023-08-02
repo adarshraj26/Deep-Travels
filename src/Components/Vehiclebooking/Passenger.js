@@ -157,8 +157,9 @@ const Passenger = () => {
               <button
                 type="submit"
                 className="btn-1 bg-black text-white"
-                value="Data successfully saved"
+                value="data saved"
                 onClick={(e) => alert(e.target.value)}
+                onSubmit={onSubmit}
               >
                 Submit
               </button>
@@ -166,11 +167,6 @@ const Passenger = () => {
           </div>
         </div>
       </section>
-      {localStorage.getItem("Name") && (
-        <div>
-          Name :<p>{localStorage.getItem("Name")} </p>
-        </div>
-      )}
     </>
   );
 };
