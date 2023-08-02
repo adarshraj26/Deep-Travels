@@ -23,6 +23,7 @@ const Passenger = () => {
                   class="form-control"
                   id="InputName"
                   placeholder=" Enter Name"
+                  value={name}
                 />
                 <label for="inputJourney col-sm-4">Journey Date</label>
                 <input type="date" class="form-control" id="inputJourney" />
