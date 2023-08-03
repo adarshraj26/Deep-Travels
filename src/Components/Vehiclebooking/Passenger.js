@@ -159,7 +159,6 @@ const Passenger = () => {
                 className="btn-1 bg-black text-white"
                 value="data saved"
                 onClick={(e) => alert(e.target.value)}
-                onSubmit={onSubmit}
               >
                 Submit
               </button>
