@@ -27,6 +27,7 @@ console.log(List);
   const [phoneNumber, setPhoneNumber] = useState("");
   
   const handleChange = (value) => {
+    setData({ ...data, ["phoneNumber"]: value });
     setPhoneNumber(value);
   };
 function submitData(){
@@ -110,7 +111,7 @@ navigates("/");
                 <div className="card-body-2">
                   <label for="inputEmail col-sm-4">Email</label>
                   <input
-                    type="text"
+                    type="email"
                     class="form-control"
                     id="inputEmail"
                     placeholder="Enter Email"
@@ -160,6 +161,7 @@ navigates("/");
                     pattern="[6789][0-9]{9}"
                     required
                     value={data.phoneNumber}
+                    name="phoneNumber"
                     onChange={handleChange}
                     inputProps={{ required: true }}
                   />

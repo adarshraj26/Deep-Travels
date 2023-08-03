@@ -640,6 +640,13 @@ footer {
   height: 38px;
   box-sizing: border-box;
 }
+.card-2 input[type="email"] {
+  width: 32vh;
+  padding: 10px 20px;
+  margin: 8px 0;
+  height: 38px;
+  box-sizing: border-box;
+}
 .card-2 input[type="time"] {
   width: 32vh;
   padding: 10px 20px;
@@ -1517,6 +1524,9 @@ footer {
     display: block;
   }
 .card-2 input[type="time"] {
+    display: block;
+  }
+  .card-2 input[type="email"] {
     display: block;
   }
 .card-2 .react-tel-input .form-control {

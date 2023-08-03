@@ -5,8 +5,12 @@ import Charges from "./charges";
 import Passenger from "./Passenger";
 import Navbar from "../Homepage/navbar";
 import Footer from "../Homepage/footer";
-
-const VehicleDetails = () => {
+import { useLocation } from "react-router-dom";
+const VehicleDetails = (props) => {
+  const location= useLocation();
+  console.log( location.state,"hello");
+  // const {state}=props.location;
+  // console.log(state, "hello");
   return (
     <>
     <Navbar/>
