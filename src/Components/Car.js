@@ -2,8 +2,9 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import Navbar from './Homepage/navbar';
 import Footer from './Homepage/footer';
-
+import carDetails from './cardetails';
 const Carbook = () => {
+    console.log("car details", carDetails)
     return (
         <>
         <Navbar/>
