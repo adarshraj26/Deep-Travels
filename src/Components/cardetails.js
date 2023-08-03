@@ -1,6 +1,7 @@
 const carDetails=[
     {
     name:"Desire",
+    image:"./assets/Car-4.jpg",
     rate:"2000",
     vehicleDetails:{
     seat:"4",
@@ -15,6 +16,96 @@ const carDetails=[
     },
     source:"jamshedpur",
     destination:"Ranchi"
+    },
+    {
+    name:"Honda Amaze",
+    image:"./assets/Car-4.jpg",
+    rate:"3000",
+    vehicleDetails:{
+    seat:"5",
+    speedLimit:"90Kmph"
+    },
+    charges:{
+    oneWayRate:2500,
+    gst:"5%",
+    other:0,
+    parking:0,
+    total:2600
+    },
+    source:"Ranchi",
+    destination:"Jamshedpur"
+    },
+    {
+    name:"Honda City",
+    image:"./assets/Car-4.jpg",
+    rate:"3300",
+    vehicleDetails:{
+    seat:"5",
+    speedLimit:"90Kmph"
+    },
+    charges:{
+    oneWayRate:2500,
+    gst:"5%",
+    other:0,
+    parking:0,
+    total:2600
+    },
+    source:"Ranchi",
+    destination:"Jamshedpur"
+    },
+    {
+    name:"Scorpio",
+    image:"./assets/Car-4.jpg",
+    rate:"4500",
+    vehicleDetails:{
+    seat:"8",
+    speedLimit:"80Kmph"
+    },
+    charges:{
+    oneWayRate:3500,
+    gst:"5%",
+    other:0,
+    parking:0,
+    total:3600
+    },
+    source:"Ranchi",
+    destination:"Jamshedpur"
+    },
+    {
+    name:"Verna",
+    image:"./assets/Car-4.jpg",
+    rate:"3000",
+    vehicleDetails:{
+    seat:"5",
+    speedLimit:"90Kmph"
+    },
+    charges:{
+    oneWayRate:2700,
+    gst:"5%",
+    other:0,
+    parking:0,
+    total:2800
+    },
+    source:"Ranchi",
+    destination:"Jamshedpur"
+    },
+    {
+    name:"Kia Seltos",
+    image:"./assets/Car-4.jpg",
+    rate:"2000",
+    vehicleDetails:{
+    seat:"4",
+    speedLimit:"70Kmph"
+    },
+    charges:{
+    oneWayRate:1500,
+    gst:"5%",
+    other:0,
+    parking:0,
+    total:1600
+    },
+    source:"Ranchi",
+    destination:"Jamshedpur"
     }
     ]
     export default carDetails;

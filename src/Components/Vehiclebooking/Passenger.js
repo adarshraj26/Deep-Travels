@@ -2,7 +2,9 @@ import { getFormHelperTextUtilityClasses } from "@mui/material";
 import React, { useState } from "react";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
+import { useNavigate } from "react-router-dom";
 const Passenger = () => {
+  const navigate = useNavigate();
   const [data, setData] = useState({
     name: "",
     email: "",
@@ -28,6 +30,7 @@ const Passenger = () => {
   };
 function submitData(){
 console.log(data)
+navigate("");
 }
   const handleChanges = (e) => {
     const { name, value } = e.target;
