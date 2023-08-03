@@ -153,7 +153,7 @@ console.log(data)
                     pattern="[6789][0-9]{9}"
                     required
                     value={data.phoneNumber}
-                    onChange={handleChange}
+                    onChange={handleChanges}
                     inputProps={{ required: true }}
                   />
 
