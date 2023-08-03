@@ -8,14 +8,36 @@ import Navbar from "./navbar";
 
 const TopBanner = () => {
   const navigate = useNavigate();
-  const [source, setSource] = useState("");
-  const [destination, setDestination] = useState("");
-  const [journeyDate, setJourneyDate] = useState("");
-  const [pickupTime, setPickupTime] = useState("");
+  // const [source, setSource] = useState("");
+  // const [destination, setDestination] = useState("");
+  // const [journeydate, setJourneyDate] = useState("");
+  // const [pickupTime, setPickupTime] = useState("");
+  const [formValue, setFormValue] = useState({
+    source: "",
+    destination: "",
+    journeydate: "",
+    pickupTime: "",
+  });
+  const [disable, setDisable] = useState("typing");
   function goToAbout() {
+    console.log(formValue);
     navigate("/Car");
-  }
 
+  }
+  // console.log(source);
+  // console.log(destination);
+  // console.log(journeydate);
+  // console.log(pickupTime);
+  const handleInput = (e) => {
+    const { name, value } = e.target;
+    setFormValue({ ...formValue, [name]: value });
+    console.log(name,value)
+  };
+  const handleSubmit = () => {
+    // e.preventDefault();
+    console.log(formValue);
+    setDisable("submitted");
+  };
   return (
     <>
       <Navbar />
@@ -47,14 +69,16 @@ const TopBanner = () => {
 
         <div className="search">
           <div className="search-car">
-            <form>
+            <form onSubmit={handleSubmit}>
               <div className="inputBox">
                 <label>Source</label>
                 <select
                   required
-                  value={source}
+                  // value={source}
+                  value={formValue.source}
                   name="source"
-                  onChange={(e) => setSource(e.target.value)}
+                  onChange={handleInput}
+                  // onChange={(e) => setSource(e.target.value)}
                 >
                   <option value={""} disabled selected hidden>
                     Search Location
@@ -67,9 +91,9 @@ const TopBanner = () => {
                 <label>Destination</label>
                 <select
                   required
-                  value={destination}
+                  value={formValue.destination}
                   name="destination"
-                  onChange={(e) => setDestination(e.target.value)}
+                  onChange={handleInput}
                 >
                   <option disabled selected hidden>
                     Destination Location
@@ -80,19 +104,35 @@ const TopBanner = () => {
               </div>
               <div className="inputBox">
                 <label>Journey Date</label>
-                <input type="date"  value={journeyDate}
-                    name="journeyDate"
-                    onChange={(e) => setJourneyDate(e.target.value)}/>
+                <input
+                  type="date"
+                  value={formValue.journeydate}
+                  name="journeydate"
+                  onChange={handleInput}
+                />
               </div>
               <div className="inputBox">
                 <label>Pickup Time</label>
-                <input type="time" value={pickupTime}
-                    name="pickupTime"
-                    onChange={(e) => setPickupTime(e.target.value)}/>
+                <input
+                  type="time"
+                  value={formValue.pickupTime}
+                  name="pickupTime"
+                  onChange={handleInput}
+                />
               </div>
             </form>
             <div className="btn">
-              <button onClick={goToAbout} className="search-btn">
+              <button
+                onClick={goToAbout}
+                className="search-btn"
+                disabled={
+                  formValue.source.length === 0 ||
+                  formValue.destination.length === 0 ||
+                  formValue.journeydate.length === 0 ||
+                  formValue.pickupTime.length === 0 ||
+                  disable === "submitted"
+                }
+              >
                 Search
               </button>
             </div>
