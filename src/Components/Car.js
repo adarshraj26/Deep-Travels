@@ -5,6 +5,7 @@ import Footer from './Homepage/footer';
 import carDetails from './cardetails';
 const Carbook = () => {
     console.log("car details", carDetails)
+   
     return (
         <>
         <Navbar/>

@@ -1,42 +1,46 @@
-import { getFormHelperTextUtilityClasses } from "@mui/material";
+
 import React, { useState } from "react";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 import { useNavigate } from "react-router-dom";
+import carDetails from "../cardetails";
 const Passenger = () => {
-  const navigate = useNavigate();
+  const renderList = carDetails.map((item,name)=><li key={name}>{item}</li>);
+  console.log(renderList);
+
+const List=Object.keys(carDetails).map((key)=>(<li>{key}:{carDetails[key]}</li>))
+
+console.log(List);
+
+  const navigates = useNavigate();
   const [data, setData] = useState({
     name: "",
     email: "",
     sourceLocation: "",
     destinationLocation: "",
     journeyDate: "",
-    pickupTime: "",
+    pickupTime: "", 
     pickupAddress: "",
     phoneNumber: "",
   });
   // const [disabled, setDisabled] = useState("typing");
   const [phoneNumber, setPhoneNumber] = useState("");
-  // const [valid, setValid] = useState(true);
-  // const [name, setName] = useState("");
-  // const [journeyDate, setJourneydate] = useState("");
-  // const [sourceLocation, setSourcelocation] = useState("");
-  // const [email, setEmail] = useState("");
-  // const [pickupTime, setPickuptime] = useState("");
-  // const [destinationLocation, setDestinationlocation] = useState("");
-  // const [pickupAddress, setPickupaddress] = useState("");
+  
   const handleChange = (value) => {
     setPhoneNumber(value);
   };
 function submitData(){
-console.log(data)
-navigate("");
+console.log(data);
+navigates("/");
 }
   const handleChanges = (e) => {
     const { name, value } = e.target;
     setData({ ...data, [name]: value });
+    
     console.log(name, value);
   };
+  // const renderList = carDetails.map((item,index)=><div key={index}>{item}</div>);
+  // console.log(renderList);
 
   // const handle = () => {
   //   localStorage.setItem("Name", name);
@@ -156,7 +160,7 @@ navigate("");
                     pattern="[6789][0-9]{9}"
                     required
                     value={data.phoneNumber}
-                    onChange={handleChanges}
+                    onChange={handleChange}
                     inputProps={{ required: true }}
                   />
 
