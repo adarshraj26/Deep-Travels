@@ -8,9 +8,9 @@ const Passenger = () => {
   const renderList = carDetails.map((item,name)=><li key={name}>{item}</li>);
   console.log(renderList);
 
-const List=Object.keys(carDetails).map((key)=>(<li>{key}:{carDetails[key]}</li>))
+// const List=Object.keys(carDetails).map((key)=>(<li>{key}:{carDetails[key]}</li>))
 
-console.log(List);
+// console.log(List);
 
   const navigates = useNavigate();
   const [data, setData] = useState({
@@ -23,7 +23,6 @@ console.log(List);
     pickupAddress: "",
     phoneNumber: "",
   });
-  // const [disabled, setDisabled] = useState("typing");
   const [phoneNumber, setPhoneNumber] = useState("");
   
   const handleChange = (value) => {
@@ -40,22 +39,9 @@ navigates("/");
     
     console.log(name, value);
   };
-  // const renderList = carDetails.map((item,index)=><div key={index}>{item}</div>);
-  // console.log(renderList);
 
-  // const handle = () => {
-  //   localStorage.setItem("Name", name);
-  //   localStorage.setItem("Email", email);
-  //   localStorage.setItem("Pickup Time", pickupTime);
-  //   localStorage.setItem("Journey Date", journeyDate);
-  //   localStorage.setItem("Pickup Address", pickupAddress);
-  //   localStorage.setItem("Source Location", sourceLocation);
-  //   localStorage.setItem("Destination Location", destinationLocation);
-  //   localStorage.setItem("Phone Number", phoneNumber);
-  // };
   const Onsubmit = () => {
     console.log(data);
-    // setDisabled("submitted");
   };
 
   return (
@@ -91,7 +77,6 @@ navigates("/");
                     onChange={handleChanges}
                   />
                   <label htmlFor="inputSource col-sm-4"> Source Location</label>
-                  {/* <input type="text" class="form-control" id="inputSource" /> */}
                   <select
                     className="locate"
                     required
@@ -133,7 +118,6 @@ navigates("/");
                   <label for="inputAddress2 col-sm-4">
                     Destination Location
                   </label>
-                  {/* <input type="text" class="form-control" id="inputAddress2" /> */}
                   <select
                     className="locate"
                     required
@@ -190,28 +174,12 @@ navigates("/");
                onClick={submitData}
                 type="submit"
                 className="btn-1 bg-black text-white"
-                value="data saved"
-
-                // disabled={
-                //   data.name.length === 0 ||
-                //   data.email.length === 0 ||
-                //   data.phoneNumber.length === 0 ||
-                //   data.sourceLocation.length === 0 ||
-                //   data.destinationLocation.length === 0 ||
-                //   data.journeyDate.length === 0 ||
-                //   data.pickupTime.length === 0 ||
-                //   data.pickupAddress.length === 0 ||
-                //   disabled === "submitted"
-                
-               
-                
+                value="data saved"    
               >
                 Submit
-              </button>
-              
+              </button>       
             </div>
-          </div>
-          
+          </div>   
         </div>
         </form>
       </section>
