@@ -1,8 +1,10 @@
 
 import React from "react";
 import "../style.css";
+import { useLocation } from "react-router-dom";
 import "@fontsource/open-sans";
-const Charges = () => {
+const Charges = (props) => {
+  const location= useLocation();
   return (
     <>
     <section className="section-charges-details">
@@ -12,26 +14,26 @@ const Charges = () => {
           <div className="card-body-3">
           <p className="chargedetails">
             <b>One Way Rate - </b>
-            ₹2000
+            {location.state.charges.oneWayRate}
           </p>
           <p className="chargedetails" >
             <b>Parking Rate - </b>
-            ₹0
+          {location.state.charges.parking}
           </p>
           </div>
           <div className="card-body-4">
           <p className="chargedetails">
-            <b>GST(5%) - </b>₹100
+            <b>GST(5%) - </b>{location.state.charges.gst}
           </p>
           </div>
           <div className="card-body-5">
           <p className="chargedetails">
-            <b>Other Charges - </b>₹0
+            <b>Other Charges - </b>{location.state.charges.other}
           </p>
           </div>
           <div className="card-body-6">
           <p className="chargedetails">
-            <b>Total Amount - </b>₹2100
+            <b>Total Amount - </b>{location.state.charges.total}
           </p>
           </div>
         </div>

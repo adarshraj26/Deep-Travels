@@ -29,29 +29,29 @@ const VehicleDetails = (props) => {
           <div className="card-body-7">
             <p className="chargedetails">
               <b>Car - </b>
-              Dezire
+              {location.state.name}
             </p>
             <p className="chargedetails">
               <b>Type - </b>
-              One Way
+              {location.state.type}
             </p>
           </div>
           <div className="card-body-8">
             <p className="chargedetails">
-              <b>Source - </b>Jamshedpur
+              <b>Source - </b>{location.state.source}
             </p>
             <p className="chargedetails">
-              <b>Speed Limit - </b>60kmph
+              <b>Speed Limit - </b>{location.state.vehicleDetails.speedLimit}
             </p>
           </div>
           <div className="card-body-9">
             <p className="chargedetails">
-              <b>Destination - </b>Ranchi
+              <b>Destination - </b>{location.state.destination}
             </p>
           </div>
           <div className="card-body-10">
             <p className="chargedetails">
-              <b>Seat - </b>4
+              <b>Seat - </b>{location.state.vehicleDetails.seat}
             </p>
           </div>
         </div>
