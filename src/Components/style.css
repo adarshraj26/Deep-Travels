@@ -79,8 +79,6 @@
 
 .collapse .navbar-collapse{
   background-color: white;
-
-  
 }
 
 /* ========================= Footer ========================= */
@@ -126,7 +124,7 @@ footer {
   color: var(--secondary-color);
   font-size: 20px;
   font-weight: 700;
-  
+
 }
 
 .single-box .single-box-content {
@@ -1021,6 +1019,51 @@ footer {
   align-items: center;
   font-family: var(--ff-3);
   font-weight: 500;
+}
+
+/* =================== ADDCARDETAILS ================= */
+.addCardetails{
+  background: var(--bg-2);
+}
+
+.addCardetails .admin-form{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 30px;
+}
+
+.submit-btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+.submit-btn .btn{
+  background: var(--btn-background);
+  font-family: var(--ff-3);
+  width: 15%;
+  border-radius: 25px;
+}
+
+.submit-btn .btn:hover{
+  background: var(--small-circle);
+}
+
+.inputContainer{
+  display: grid;
+  padding: 20px;
+}
+
+.inputContainer input{
+  width: 70%;
+  font-family: var(--ff-3);
+  font-size: 15px;
+}
+
+.inputContainer label{
+  font-family: var(--ff-3);
+  font-weight: var(--fw-1);
 }
 
 /* ==========================MEDIA QUERIES========================= */

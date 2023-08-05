@@ -8,6 +8,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min';
 // import 'bootstrap/scss/bootstrap.scss';
 
 import Approute from './Components/Approute';
+import AddCarDetails from './Components/add-card-details';
 
 // import $ from 'jquery';
 // import Popper from 'popper.js';
@@ -15,9 +16,10 @@ import Approute from './Components/Approute';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Approute>
-    <App />
-    </Approute>
+    {/* <Approute> */}
+    {/* <App /> */}
+    <AddCarDetails/>
+    {/* </Approute> */}
   </React.StrictMode>
 );
 
