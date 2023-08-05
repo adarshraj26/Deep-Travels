@@ -162,8 +162,7 @@ footer {
 /* ============================ Cards Page =========================== */
 
 .section-card {
-  margin-top: 5px;
-    margin-bottom: 50px;
+  margin: 5px 30px 50px 30px;
 }
 
 .main-card {
@@ -173,11 +172,11 @@ footer {
   height: 40%;
   margin: auto;
   max-width: fit-content;
-  margin-top: 31px auto;
+  margin-top: 31px 50px;
 }
 
 .main-card .card {
-  margin: 40px;
+  margin: 30px;
   border-radius: 22px 22px 5px 5px;
   display: flex;
   float: left;

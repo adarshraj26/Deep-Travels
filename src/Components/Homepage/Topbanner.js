@@ -5,13 +5,10 @@ import BottomBanner from "./banner";
 import Testimonial from "./testimonial";
 import Footer from "./footer";
 import Navbar from "./navbar";
+import cabsDetails from "../cabs";
 
 const TopBanner = () => {
   const navigate = useNavigate();
-  // const [source, setSource] = useState("");
-  // const [destination, setDestination] = useState("");
-  // const [journeydate, setJourneyDate] = useState("");
-  // const [pickupTime, setPickupTime] = useState("");
   const [formValue, setFormValue] = useState({
     source: "",
     destination: "",
@@ -24,17 +21,12 @@ const TopBanner = () => {
     navigate("/Car");
 
   }
-  // console.log(source);
-  // console.log(destination);
-  // console.log(journeydate);
-  // console.log(pickupTime);
   const handleInput = (e) => {
     const { name, value } = e.target;
     setFormValue({ ...formValue, [name]: value });
     console.log(name,value)
   };
   const handleSubmit = () => {
-    // e.preventDefault();
     console.log(formValue);
     setDisable("submitted");
   };
@@ -74,11 +66,9 @@ const TopBanner = () => {
                 <label>Source</label>
                 <select
                   required
-                  // value={source}
                   value={formValue.source}
                   name="source"
                   onChange={handleInput}
-                  // onChange={(e) => setSource(e.target.value)}
                 >
                   <option value={""} disabled selected hidden>
                     Search Location

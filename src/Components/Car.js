@@ -1,11 +1,13 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import Navbar from './Homepage/navbar';
 import Footer from './Homepage/footer';
 import carDetails from './cardetails';
 import { useNavigate } from 'react-router-dom';
-const Carbook = () => {
-    console.log("car details", carDetails)
+import cabsDetails from './cabs';
+
+const Carbook = (props) => {
+    console.log("Cabsdetails: ",cabsDetails);
    const navigate = useNavigate();
     return (
         <>
@@ -17,7 +19,7 @@ const Carbook = () => {
                 <div className='main-card row'>
                 {carDetails?.map((item,index)=>(
                    <div class="card col-sm-12 col-md-4 col-lg-4" style={{ width: "22rem" }}>
-                   <img src={require("./assets/Car-4.jpg")} class="card-img-top" alt="Maruti Suzuki Dezire" />
+                   <img src={item.image} class="card-img-top" alt="Maruti Suzuki Dezire" />
                    <div class="card-body">
                        <h5 class="card-title">{item.name}</h5>
                        <p class="card-text">&#8377; {item.rate}</p>
