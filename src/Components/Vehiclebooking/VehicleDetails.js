@@ -9,6 +9,8 @@ import { useLocation } from "react-router-dom";
 const VehicleDetails = (props) => {
   const location= useLocation();
   console.log( location.state,"hello");
+  console.log(location.state.name, "name");
+  console
   // const {state}=props.location;
   // console.log(state, "hello");
   return (
