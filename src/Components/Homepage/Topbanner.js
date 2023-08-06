@@ -85,7 +85,7 @@ const TopBanner = () => {
                   name="destination"
                   onChange={handleInput}
                 >
-                  <option disabled selected hidden>
+                  <option value={""} disabled selected hidden>
                     Destination Location
                   </option>
                   <option>Ranchi</option>
