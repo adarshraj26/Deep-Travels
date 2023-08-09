@@ -9,16 +9,20 @@ const AddCarDetails = () => {
   const navigate = useNavigate();
 
   const [formInput, setFormInput] = useState({
-    carname: "",
+    name: "",
     type: "",
-    sourcelocate: "",
-    destinationlocate: "",
-    speedlimit: "",
-    onewayrate: "",
-    parkingrate: "",
+    source: "",
+    destination: "",
+    speedLimit: "",
+    oneWayRate: "",
+    parking: "",
     gst: "",
-    othercharges: "",
-    totalamount: "",
+    other: "",
+    total: "",
+   seat: "",
+   image: "",
+   rate:""
+
   });
   
   const handleForm = (e) => {
@@ -27,12 +31,10 @@ const AddCarDetails = () => {
     console.log(name, value);
    
   };
-  const OnAdd = (e) => {
-    e.preventDefault();
+  const OnAdd = () => {
     axios.post('https://jo8aqd7jvb.execute-api.us-east-1.amazonaws.com/dev/addDetails', formInput)
     .then(response => {
       console.log('Data sent successfully:', response.formInput);
-      console.log(e);
     })
     .catch(error => {
       console.error('Error sending data:', error);
@@ -54,10 +56,20 @@ const AddCarDetails = () => {
               <label>Car Name:</label>
               <input
                 type="text"
-                value={formInput.carname}
+                value={formInput.name}
                 onChange={handleForm}
-                name="carname"
+                name="name"
                 placeholder="Enter Car Name"
+              />
+            </div>
+            <div className="inputContainer">
+              <label>Image</label>
+              <input
+                type="url"
+                name="image"
+                value={formInput.image}
+                onChange={handleForm}
+                placeholder="Enter image link"
               />
             </div>
             <div className="inputContainer">
@@ -76,11 +88,31 @@ const AddCarDetails = () => {
               </select>
             </div>
             <div className="inputContainer">
+              <label>Seat:</label>
+              <input
+                type="number"
+                name="seat"
+                value={formInput.seat}
+                onChange={handleForm}
+                placeholder="Enter Seats"
+              />
+            </div>
+            <div className="inputContainer">
+              <label>Rate:</label>
+              <input
+                type="number"
+                name="rate"
+                value={formInput.rate}
+                onChange={handleForm}
+                placeholder="Enter Rate"
+              />
+            </div>
+            <div className="inputContainer">
               <label>Source:</label>
               <select
                 className="location"
-                name="sourcelocate"
-                value={formInput.sourcelocate}
+                name="source"
+                value={formInput.source}
                 onChange={handleForm}
               >
                 <option disabled selected hidden>
@@ -94,23 +126,23 @@ const AddCarDetails = () => {
               <label>Destination:</label>
               <select
                 className="location"
-                name="destinationlocate"
-                value={formInput.destinationlocate}
+                name="destination"
+                value={formInput.destination}
                 onChange={handleForm}
               >
                 <option disabled selected hidden>
                   Destination Location
                 </option>
-                <option>Ranchi</option>
                 <option>Jamshedpur</option>
+                <option>Ranchi</option>
               </select>
             </div>
             <div className="inputContainer">
               <label>Speed Limit (in Kmph):</label>
               <input
                 type="number"
-                name="speedlimit"
-                value={formInput.speedlimit}
+                name="speedLimit"
+                value={formInput.speedLimit}
                 onChange={handleForm}
                 placeholder="Enter Speed Limit"
               />
@@ -119,8 +151,8 @@ const AddCarDetails = () => {
               <label>One Way Rate:</label>
               <input
                 type="number"
-                name="onewayrate"
-                value={formInput.onewayrate}
+                name="oneWayRate"
+                value={formInput.oneWayRate}
                 onChange={handleForm}
                 placeholder="Enter rate"
               />
@@ -129,8 +161,8 @@ const AddCarDetails = () => {
               <label>Parking Rate:</label>
               <input
                 type="number"
-                name="parkingrate"
-                value={formInput.parkingrate}
+                name="parking"
+                value={formInput.parking}
                 onChange={handleForm}
                 placeholder="Enter parking rate"
               />
@@ -149,8 +181,8 @@ const AddCarDetails = () => {
               <label>Other Charges:</label>
               <input
                 type="number"
-                name="othercharges"
-                value={formInput.othercharges}
+                name="other"
+                value={formInput.other}
                 onChange={handleForm}
                 placeholder="Enter other charges"
               />
@@ -159,12 +191,13 @@ const AddCarDetails = () => {
               <label>Total Amount:</label>
               <input
                 type="number"
-                name="totalamount"
-                value={formInput.totalamount}
+                name="total"
+                value={formInput.total}
                 onChange={handleForm}
                 placeholder="Enter total amount"
               />
             </div>
+           
           </form>
           <div className="submit-btn">
             <button onClick={submitForm} className="btn btn-primary">
