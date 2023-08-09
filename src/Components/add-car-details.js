@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Navbar from "./Homepage/navbar";
 import Footer from "./Homepage/footer";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
-import { error } from "jquery";
+
 
 const AddCarDetails = () => {
   const navigate = useNavigate();
@@ -19,28 +19,45 @@ const AddCarDetails = () => {
     gst: "",
     other: "",
     total: "",
-   seat: "",
-   image: "",
-   rate:""
-
+    seat: "",
+    image: "",
+    rate: "",
   });
+
   
-  const handleForm = (e) => {
-    const { name, value } = e.target;
-    setFormInput({ ...formInput, [name]: value });
-    console.log(name, value);
-   
-  };
-  const OnAdd = () => {
-    axios.post('https://jo8aqd7jvb.execute-api.us-east-1.amazonaws.com/dev/addDetails', formInput)
-    .then(response => {
-      console.log('Data sent successfully:', response.formInput);
-    })
-    .catch(error => {
-      console.error('Error sending data:', error);
+  const OnAdd = async(event) => {
+    event.preventDefault();
+    try {
+      console.log("hello")
+      const response = await axios.post("https://jo8aqd7jvb.execute-api.us-east-1.amazonaws.com/dev/details", formInput);
+      console.log('Data sent successfully:', response.data);
+    setFormInput({
+      name: "",
+      type: "",
+      source: "",
+      destination: "",
+      speedLimit: "",
+      oneWayRate: "",
+      parking: "",
+      gst: "",
+      other: "",
+      total: "",
+      seat: "",
+      image: "",
+      rate: "",
     });
+  }
+  catch (error) {
+    console.error('Error sending data:', error);
+  };
     // console.log(event);
     console.log(formInput);
+    
+  };
+  const handleForm = (event) => {
+    const { name, value } = event.target;
+    setFormInput({ ...formInput, [name]: value });
+    console.log(name, value);
   };
   const submitForm = () => {
     console.log(formInput);
@@ -197,13 +214,13 @@ const AddCarDetails = () => {
                 placeholder="Enter total amount"
               />
             </div>
-           
-          </form>
-          <div className="submit-btn">
+            <div className="submit-btn">
             <button onClick={submitForm} className="btn btn-primary">
               Add Car
             </button>
           </div>
+          </form>
+          
         </div>
       </section>
       <Footer />

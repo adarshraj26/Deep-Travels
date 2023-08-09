@@ -1038,16 +1038,18 @@ footer {
 }
 
 .submit-btn{
-  display: flex;
+  display: grid;
+  width: 70%;
   align-items: center;
-  justify-content: center;
-  padding-bottom: 10px;
+  /* justify-content: center; */
+  padding-bottom: 0px;
 }
 
 .submit-btn .btn{
   background: var(--card-btn);
   font-family: var(--ff-3);
-  width: 15%;
+  width: 40%;
+
   font-weight: var(--fw-1);
   border-radius: 25px;
 }
