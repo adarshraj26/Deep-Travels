@@ -8,6 +8,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min';
 // import 'bootstrap/scss/bootstrap.scss';
 
 import Approute from './Components/Approute';
+import AddCarDetails from './Components/add-car-details';
 
 // import $ from 'jquery';
 // import Popper from 'popper.js';
@@ -17,6 +18,7 @@ root.render(
   <React.StrictMode>
     <Approute>
     <App />
+    {/* <AddCarDetails/> */}
     </Approute>
   </React.StrictMode>
 );

@@ -79,8 +79,6 @@
 
 .collapse .navbar-collapse{
   background-color: white;
-
-  
 }
 
 /* ========================= Footer ========================= */
@@ -126,6 +124,7 @@ footer {
   color: var(--secondary-color);
   font-size: 20px;
   font-weight: 700;
+
 }
 
 .single-box .single-box-content {
@@ -1022,6 +1021,67 @@ footer {
   font-weight: 500;
 }
 
+/* =================== ADD-CAR-DETAILS ================= */
+.section-cardetails{
+  margin: 100px 0;
+}
+
+.addCardetails{
+  background: var(--vd-color);
+  margin: 0 43px;
+}
+
+.addCardetails .admin-form{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 30px;
+}
+
+.submit-btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+.submit-btn .btn{
+  background: var(--card-btn);
+  font-family: var(--ff-3);
+  width: 15%;
+  font-weight: var(--fw-1);
+  border-radius: 25px;
+}
+
+.submit-btn .btn:hover{
+  background: var(--btn-background);
+}
+
+.inputContainer{
+  display: grid;
+  padding: 20px;
+}
+
+.inputContainer input{
+  width: 70%;
+  font-family: var(--ff-3);
+  font-size: 15px;
+  border-radius: 5px;
+  height: 30px;
+}
+
+.inputContainer .location{
+  width: 70%;
+  height: 30px;
+  font-family: var(--ff-3);
+  border-radius: 5px;
+  background: var(--primary-color);
+}
+
+.inputContainer label{
+  font-family: var(--ff-3);
+  font-weight: var(--fw-1);
+}
+
 /* ==========================MEDIA QUERIES========================= */
 
 /* For Desktop View */
@@ -1172,6 +1232,24 @@ footer {
   margin: 25px;
 }
 
+/* ============ ADD-CAR-DETAILS ============ */
+
+.addCardetails .admin-form{
+  display: block;
+}
+
+.inputContainer{
+  /* padding-left: 160px; */
+  margin-left: 140px;
+}
+
+.submit-btn .btn{
+  width: 30%;
+}
+
+.inputContainer .location{
+  height: 29px;
+}
 }
 
 /* For Mobile Phones Portrait or Landscape View */
@@ -1581,6 +1659,20 @@ footer {
     margin-left: 25px;
   }
 
+  /* ===================== ADD-CAR-DETAILS =================== */
+  .addCardetails .admin-form{
+    display: block;
+    padding: 0;
+  }
+
+  .inputContainer{
+    margin-left: 21px;
+  }
+
+  .submit-btn .btn{
+    width: 50%;
+    margin-top: 45px;
+  }
 }
 /* tab view */
 @media screen and (min-device-width: 768px) and (max-device-width: 1024px) {

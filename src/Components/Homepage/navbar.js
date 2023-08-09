@@ -33,19 +33,12 @@ const Navbar = () => {
               </a>
             </li>
             <li className="nav-item">
-              <Link to="/Contact" className="nav-link text-black" >Contact</Link>
-              {/* <a className="nav-link text-black" href="#">
-                Contact
-              </a> */}
-              
-              
+              <Link to="/Contact" className="nav-link text-black" >Contact</Link>          
             </li>
+            {/* <li className="nav-item">
+              <Link to="/add-car-details" className="nav-link text-black" >Admin</Link>          
+            </li> */}
           </ul>
-          {/* <div className="hamburger" onClick={() => setShowMenu(!showMenu)}>
-                <span className="bar"></span>
-                <span className="bar"></span>
-                <span className="bar"></span>
-            </div> */}
         </div>
       </nav>
     </div>
