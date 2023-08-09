@@ -6,16 +6,18 @@ import { useNavigate } from "react-router-dom";
 const AddCarDetails = () => {
     const navigate = useNavigate();
     const [formInput, setFormInput] = useState({
-        carname: "",
+        name: "",
+        image: "",
         type: "",
-        sourcelocate: "",
-        destinationlocate: "",
-        speedlimit: "",
-        onewayrate: "",
-        parkingrate: "",
+        source: "",
+        destination: "",
+        speedLimit: "",
+        rate: "",
+        oneWayRate: "",
+        parking: "",
         gst: "",
-        othercharges: "",
-        totalamount: "",
+        other: "",
+        total: "",
     });
 
     const handleForm = (e) => {
@@ -38,7 +40,11 @@ const AddCarDetails = () => {
                     <form onSubmit={OnAdd} className="admin-form">
                         <div className="inputContainer">
                             <label>Car Name:</label>
-                            <input type="text" value={formInput.carname} onChange={handleForm} name="carname" placeholder="Enter Car Name" />
+                            <input type="text" value={formInput.name} onChange={handleForm} name="name" placeholder="Enter Car Name" />
+                        </div>
+                        <div className="inputContainer">
+                            <label>Image: </label>
+                            <input type="url" value={formInput.image} onChange={handleForm} name="image" placeholder="Enter image url" />
                         </div>
                         <div className="inputContainer">
                             <label>Type:</label>
@@ -59,8 +65,8 @@ const AddCarDetails = () => {
                             <label>Source:</label>
                             <select
                                 className="location"
-                                name="sourcelocate"
-                                value={formInput.sourcelocate}
+                                name="source"
+                                value={formInput.source}
                                 onChange={handleForm}
                             >
                                 <option disabled selected hidden>
@@ -74,8 +80,8 @@ const AddCarDetails = () => {
                             <label>Destination:</label>
                             <select
                                 className="location"
-                                name="destinationlocate"
-                                value={formInput.destinationlocate}
+                                name="destination"
+                                value={formInput.destination}
                                 onChange={handleForm}
                             >
                                 <option disabled selected hidden>
@@ -87,15 +93,19 @@ const AddCarDetails = () => {
                         </div>
                         <div className="inputContainer">
                             <label>Speed Limit (in Kmph):</label>
-                            <input type="number" name="speedlimit" value={formInput.speedlimit} onChange={handleForm} placeholder="Enter Speed Limit" />
+                            <input type="number" name="speedLimit" value={formInput.speedLimit} onChange={handleForm} placeholder="Enter Speed Limit" />
+                        </div>
+                        <div className="inputContainer">
+                            <label>Rate: </label>
+                            <input type="number" name="rate" value={formInput.rate} onChange={handleForm} placeholder="Enter rate" />
                         </div>
                         <div className="inputContainer">
                             <label>One Way Rate:</label>
-                            <input type="number" name="onewayrate" value={formInput.onewayrate} onChange={handleForm} placeholder="Enter rate" />
+                            <input type="number" name="oneWayRate" value={formInput.oneWayRate} onChange={handleForm} placeholder="Enter one way rate" />
                         </div>
                         <div className="inputContainer">
                             <label>Parking Rate:</label>
-                            <input type="number" name="parkingrate" value={formInput.parkingrate} onChange={handleForm} placeholder="Enter parking rate" />
+                            <input type="number" name="parking" value={formInput.parking} onChange={handleForm} placeholder="Enter parking rate" />
                         </div>
                         <div className="inputContainer">
                             <label>GST:</label>
@@ -103,11 +113,11 @@ const AddCarDetails = () => {
                         </div>
                         <div className="inputContainer">
                             <label>Other Charges:</label>
-                            <input type="number" name="othercharges" value={formInput.othercharges} onChange={handleForm} placeholder="Enter other charges" />
+                            <input type="number" name="other" value={formInput.other} onChange={handleForm} placeholder="Enter other charges" />
                         </div>
                         <div className="inputContainer">
                             <label>Total Amount:</label>
-                            <input type="number" name="totalamount" value={formInput.totalamount} onChange={handleForm} placeholder="Enter total amount" />
+                            <input type="number" name="total" value={formInput.total} onChange={handleForm} placeholder="Enter total amount" />
                         </div>
                     </form>
                     <div className="submit-btn">
