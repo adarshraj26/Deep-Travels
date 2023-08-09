@@ -1038,11 +1038,13 @@ footer {
 }
 
 .submit-btn{
-  display: grid;
-  width: 70%;
-  align-items: center;
-  /* justify-content: center; */
-  padding-bottom: 0px;
+  display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50%;
+    width: 40%;
+    margin-left: 20%;
 }
 
 .submit-btn .btn{

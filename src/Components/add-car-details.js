@@ -23,12 +23,14 @@ const AddCarDetails = () => {
     image: "",
     rate: "",
   });
-
+  const getUniqueKey = () => {
+    return Math.floor(Math.random()*10000000000)
+}
   
   const OnAdd = async(event) => {
     event.preventDefault();
     try {
-      console.log("hello")
+      console.log("hello", formInput);
       const response = await axios.post("https://jo8aqd7jvb.execute-api.us-east-1.amazonaws.com/dev/details", formInput);
       console.log('Data sent successfully:', response.data);
     setFormInput({
@@ -60,6 +62,7 @@ const AddCarDetails = () => {
     console.log(name, value);
   };
   const submitForm = () => {
+    // return Math.floor(Math.random()*10000000000);
     console.log(formInput);
     navigate("/add-car-details");
   };
