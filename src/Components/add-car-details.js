@@ -31,7 +31,8 @@ const AddCarDetails = () => {
     event.preventDefault();
     try {
       console.log("hello", formInput);
-      const response = await axios.post("https://jo8aqd7jvb.execute-api.us-east-1.amazonaws.com/dev/details", formInput);
+      const uniqueIDd = Math.floor(Math.random() * 10000000000);
+      const response = await axios.post("https://jo8aqd7jvb.execute-api.us-east-1.amazonaws.com/dev/details", {...formInput, id: uniqueIDd});
       console.log('Data sent successfully:', response.data);
     setFormInput({
       name: "",
@@ -48,6 +49,7 @@ const AddCarDetails = () => {
       image: "",
       rate: "",
     });
+    navigate("/add-car-details");
   }
   catch (error) {
     console.error('Error sending data:', error);
@@ -62,7 +64,7 @@ const AddCarDetails = () => {
     console.log(name, value);
   };
   const submitForm = () => {
-    // return Math.floor(Math.random()*10000000000);
+  
     console.log(formInput);
     navigate("/add-car-details");
   };
