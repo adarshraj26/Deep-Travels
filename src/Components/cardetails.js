@@ -47,11 +47,11 @@ const carDetails=[
     speedLimit:"90Kmph"
     },
     charges:{
-    oneWayRate:2500,
+    oneWayRate:3300,
     gst:"5%",
     other:0,
     parking:0,
-    total:2600
+    total:3400
     },
     source:"Ranchi",
     destination:"Jamshedpur"
@@ -66,11 +66,11 @@ const carDetails=[
     speedLimit:"80Kmph"
     },
     charges:{
-    oneWayRate:3500,
+    oneWayRate:4500,
     gst:"5%",
     other:0,
     parking:0,
-    total:3600
+    total:4600
     },
     source:"Ranchi",
     destination:"Jamshedpur"
@@ -85,11 +85,11 @@ const carDetails=[
     speedLimit:"90Kmph"
     },
     charges:{
-    oneWayRate:2700,
+    oneWayRate:3000,
     gst:"5%",
     other:0,
     parking:0,
-    total:2800
+    total:3100
     },
     source:"Ranchi",
     destination:"Jamshedpur"
@@ -104,11 +104,11 @@ const carDetails=[
     speedLimit:"70Kmph"
     },
     charges:{
-    oneWayRate:1500,
+    oneWayRate:2000,
     gst:"5%",
     other:0,
     parking:0,
-    total:1600
+    total:2100
     },
     source:"Ranchi",
     destination:"Jamshedpur"
