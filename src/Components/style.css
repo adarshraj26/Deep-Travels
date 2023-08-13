@@ -1035,20 +1035,19 @@ footer {
 }
 
 .submit-btn {
-  display: flex;
   position: absolute;
+  display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 50%;
-  width: 40%;
-  margin-left: 20%;
+  margin-top: 500px;
+  /* width: 40%; */
+  margin-left: 15%;
 }
 
 .submit-btn .btn {
   background: var(--card-btn);
   font-family: var(--ff-3);
-  width: 40%;
-
+  width: 20%;
   font-weight: var(--fw-1);
   border-radius: 25px;
 }
@@ -1088,9 +1087,7 @@ footer {
 /* For Desktop View */
 @media screen and (min-device-width: 1025px) {
   .submit-btn {
-    margin-top: 33%;
-    width: 20%;
-    margin-left: 30%;
+    width: 60%;
   }
 }
 
@@ -1248,11 +1245,16 @@ footer {
     /* padding-left: 160px; */
     margin-left: 140px;
   }
-  
-  .submit-btn{
+
+  .submit-btn {
     margin-top: 45px;
     width: 40%;
     margin-left: 100px;
+  }
+
+  .submit-btn .btn{
+    width: 30%;
+    margin-left: 80px;
   }
 
   .inputContainer .location {
